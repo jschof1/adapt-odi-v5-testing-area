@@ -55,26 +55,35 @@ Below includes a version tracker table which will help the team keep a track of 
 
 ## Installation
 1. [Grunt](https://gruntjs.com/getting-started), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) and [Node.js](https://nodejs.org/en/download/) must be installed on your computer first.
+
 2. Double check they have been installed by `{packageName} -v` on in your terminal. If they are installed the terminal should provide you with the version number you currently have installed:
 
 
-    ```node -v```
+    `node -v`
 
-  ~Node.js version number should be returned by your terminal~
+Node.js version number should be returned by your terminal
   
-    ```npm -v```
+    `npm -v`
     
- ~NPM version number should be returned by your terminal~
+NPM version number should be returned by your terminal
 
-    ```grunt -v```
+    `grunt -v`
     
-~Grunt version number should be returned by your terminal~
+Grunt version number should be returned by your terminal
 
  
 3. Once you have confirmed that those packages are installed, download the zip of this repository, found in the top right hand corner. 
+
 4. Unzip the folder.
+
 5. Drag the _unzipped_ folder into the location of your choice.
+
 6. Navigate to this folder in your terminal.
+
 7. Once you are inside the ODI Adapt Version 5 Testing Area folder run `npm i `. This will install all the packages you need to host the testing area locally.
-8. To exectue the server run `grunt server`
-9. Now navigate to `localhost:9005` and you should see the ODI's Adapt testing area.
+
+8. Run `grunt build`
+
+9. To exectue the server run `grunt server`
+
+10. Now navigate to `localhost:9005` and you should see the ODI's Adapt testing area.
