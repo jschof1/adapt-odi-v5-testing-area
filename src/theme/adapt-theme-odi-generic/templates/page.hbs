@@ -1,0 +1,138 @@
+{{! make the _globals object in course.json available to this template}}
+{{import_globals}}
+<div class="page__inner">
+
+  {{#any displayTitle subtitle body instruction}}
+  <div class="page__header">
+    <div class="page__header-inner">
+
+      {{#if displayTitle}}
+      <div class="page__title">
+
+        {{#unless _disableAccessibilityState}}
+        <div class="js-heading"></div>
+        {{/unless}}
+
+        <div class="page__title-inner" {{#unless _disableAccessibilityState}}aria-hidden="true"{{/unless}}>
+          {{{compile displayTitle}}}
+        </div>
+
+      </div>
+      {{/if}}
+
+      {{#if subtitle}}
+      <div class="page__subtitle">
+        <div class="page__subtitle-inner">
+          {{{compile subtitle}}}
+        </div>
+      </div>
+      {{/if}}
+
+      {{#any body pageBody}}
+      <div class="page__body">
+        <div class="page__body-inner">
+          {{#if pageBody}}
+          {{{compile pageBody}}}
+          {{else}}
+          {{{compile body}}}
+          {{/if}}
+        </div>
+      </div>
+      {{/any}}
+
+      {{#if instruction}}
+      <div class="page__instruction">
+        <div class="page__instruction-inner">
+          {{{compile instruction}}}
+        </div>
+      </div>
+      {{/if}}
+
+    </div>
+  </div>
+  {{/any}}
+
+  <div class="article__container">
+    {{!-- Articles render here --}}
+  </div>
+
+</div>
+
+{{!-- THE CUSTOM FOOTER --}}
+
+<div class="block inverted footer footer-logo-links"><div class="block__inner">
+	<div class="block__title">
+		<div role="heading" tabindex="-1" class="block__title-inner h3" aria-level="3" aria-hidden="true">
+		</div>
+	</div>
+	<div class="component__container">
+		<div class="component component__full nth-child-1">
+			<div class="about-credit about-section">
+				{{{_globals._extensions._aboutPage.aboutCredit}}}
+			</div>
+		</div>
+		<div class="component graphic__component component is-left nth-child-1"><div class="graphic__inner component__inner">
+			<div class="graphic__header component__header">
+				<div class="graphic__header-inner component__header-inner">
+					<div class="graphic__title component__title">
+						<div role="heading" tabindex="-1" class="graphic__title-inner component__title-inner" aria-level="4" aria-hidden="true">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="graphic__widget component__widget footer-logo">
+				<img src="assets/logo-small.png" data-large="assets/logo-small.png" data-small="assets/logo-small.png" class="a11y-ignore" aria-hidden="true" tabindex="-1">
+			</div>
+		</div>
+		<div class="accessibility-state">
+			<span tabindex="-1" role="region" class="aria-label a11y-ignore-focus prevent-default" id="buttons-aria-label-incomplete" aria-hidden="true">  Incomplete</span>
+		</div></div>
+
+		<div class="component socialbuttons-component component is-right nth-child-2">
+			<div class="socialbuttons-inner component__inner">
+				<div class="about-section">
+					<span class="aria-label prevent-default a11y-ignore" tabindex="-1" role="region" aria-hidden="true">This component displays a series of clickable social network buttons. You can customise each one bellow.</span>
+					{{#if _globals._extensions._aboutPage.SL_text}}
+					 	<div id="about-SL-text">
+					 		{{{_globals._extensions._aboutPage.SL_text}}}
+	            		</div>
+	            	{{else}}
+	            		<div id="social-icons">
+						{{#if _globals._extensions._aboutPage.SL_twitter}}
+							<a class="social" target="_blank" href="https://twitter.com/{{{_globals._extensions._aboutPage.SL_twitter}}}"><img src="assets/twitter.png"></a>
+						{{/if}}
+						{{#if _globals._extensions._aboutPage.SL_facebook}}
+	                		<a class="social" target="_blank" href="https://www.facebook.com/{{{_globals._extensions._aboutPage.SL_facebook}}}"><img src="assets/facebook.png"></a>
+	                	{{/if}}
+		                {{#if _globals._extensions._aboutPage.SL_soundcloud}}
+	    	            	<a class="social" target="_blank" href="https://soundcloud.com/{{{_globals._extensions._aboutPage.SL_soundcloud}}}"><img src="assets/soundcloud.png"></a>
+	                	{{/if}}
+		                {{#if _globals._extensions._aboutPage.SL_scribd}}
+	    	            	<a class="social" target="_blank" href="https://www.scribd.com/{{{_globals._extensions._aboutPage.SL_scribd}}}"><img src="assets/scribd.png"></a>
+	        	        {{/if}}
+	            	    {{#if _globals._extensions._aboutPage.SL_github}}
+		                	<a class="social" target="_blank" href="https://github.com/{{{_globals._extensions._aboutPage.SL_github}}}"><img src="assets/github.png"></a>
+		                {{/if}}
+	                	{{#if _globals._extensions._aboutPage.SL_vimeo}}
+		                	<a class="social" target="_blank" href="https://vimeo.com/{{{_globals._extensions._aboutPage.SL_vimeo}}}"><img src="assets/vimeo.png"></a>
+	                	{{/if}}
+		                {{#if _globals._extensions._aboutPage.SL_youtube}}
+	    	            	<a class="social" target="_blank" href="https://www.youtube.com/user/{{{_globals._extensions._aboutPage.SL_youtube}}}"><img src="assets/youtube.png"></a>
+	        	        {{/if}}
+	                	{{#if _globals._extensions._aboutPage.SL_flickr}}
+		                	<a class="social" target="_blank" href="https://www.flickr.com/photos/{{{_globals._extensions._aboutPage.SL_flickr}}}/"><img src="assets/flickr.png"></a>
+	                	{{/if}}
+	                	</div>
+	                {{/if}}
+					<div class="about-links">
+
+					</div>
+				</div>
+			</div>
+			<div class="accessibility-state">
+				<span tabindex="-1" role="region" class="aria-label a11y-ignore-focus prevent-default" id="buttons-aria-label-incomplete" aria-hidden="true">Incomplete</span>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
