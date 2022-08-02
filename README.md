@@ -1,51 +1,80 @@
-# Adapt Framework
-[![Join the chat at https://gitter.im/adaptlearning/adapt_framework](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adaptlearning/adapt_framework?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-Adapt is a free and easy to use framework and authoring tool that creates fully responsive, multi-device, HTML5 e-learning content.
+# The ODI Adapt Version 5 Testing Area
 
-**Important Note:** Adapt no longer supports IE8, 9 & 10. If you need support for those browsers, please use [the legacy branch of Adapt](https://github.com/adaptlearning/adapt_framework/tree/legacy) instead.
+## What is the purpose of this repistory?
 
-## What Does It Do?
-The Adapt framework is a toolkit for creating responsive, single-version HTML5 e-learning courses for delivery on a web server or SCORM-compliant learning management system.
+This repository allows the ODI to showcase and test different components and [custom Adapt theme](https://github.com/theodi/adapt-theme-odi).
 
-We've also created a [server-based authoring tool](https://github.com/adaptlearning/adapt_authoring/) for creating courses using the framework.
+This repository will help the learning development team at the ODI keep a track of all the *working* components, allowing them to stay on top of versioning. 
 
-Interested? [See what Adapt can do.](https://adaptlearning.github.io/v5demo/)
+Below includes a version tracker table which will help the team keep a track of all the stable component versions :
 
-## Features
-+ Open source, published under the GNU General Public License, and FREE
-+ HTML5 and CSS3 - now with support for JavaScript ES6-8 and [JSX](https://reactjs.org/docs/introducing-jsx.html)
-+ Responsive across multiple devices and platforms
-+ Delivery of courses via SCORM compliant LMS or via web server
-+ 23 bundled plug-ins, [more available](https://www.adaptlearning.org/index.php/plugin-browser/) through the community
-+ [Meets WAI AA accessibility standards](https://github.com/adaptlearning/adapt_framework/wiki/Accessibility)
-+ Right-To-Left compatibility
-+ Assessments with support for question banks, randomisation, and customisable feedback
-+ [Step locking](https://github.com/adaptlearning/adapt_framework/wiki/Locking-objects-with-'_isLocked'-and-'_lockType') and bookmarking
-+ [Multi language and localisation support](https://github.com/adaptlearning/adapt_framework/wiki/Course-Localisation)
-+ Customisable theme
-+ Built-in animation effects
-+ [Experience API (xAPI)](https://xapi.com/) support via the [adapt-contrib-xapi plugin](https://github.com/adaptlearning/adapt-contrib-xapi)
+||||||
+|--- |--- |--- |--- |--- |
+|Thing|D Version|J Version|Link (if applicable)|Comments|
+|Adapt Framework|5.18.1|5.18.0|||
+|Authoring tool|0.10.5|0.10.5|||
+|Article block slider|3.1.1|3.4.0|||
+|Assessment|4.5.3 4.6.1|4.6.1||For GMCQ: tick percentage base Question behavoiur: all three ticked|
+|Bookmarking|3.3.1|3.3.3|||
+|Developer Tools|3.0.11|3.0.11|||
+|Footer Links|0.2.1|0.2.1|https://github.com/theodi/adapt-odi-footerLink||
+|Language Picker|4.4.0|4.5.0|||
+|Licence terms (in tutor)|0.5.1|0.5.1|https://github.com/theodi/adapt-odi-licence||
+|Page level progress|5.3.1|1.9.4|||
+|Resources|4.2.0|4.2.0|||
+|Simple about page (in tutor)|0.5.2|0.5.2|https://github.com/theodi/adapt-contrib-aboutPage||
+|Spoor|3.10.1|4.2.0|||
+|Trickle|5.2.3|5.2.6|||
+|Tutor|4.0.0|4.0.0|||
+|Vanilla theme||5.7.0|https://github.com/adaptlearning/adapt-contrib-vanilla/releases/tag/v5.7.0||
+|xAPI|0.8.3-3|0.8.3-3|https://github.com/theodi/adapt-contrib-xapi/tree/odi-guid-0.8.3-cookies||
+|ODI Generic (theme)|0.9.22||https://github.com/theodi/adapt-theme-odi-generic/tree/framework-v5||
+|Accordion|6.0.0|5.3.0|||
+|Assessment results|4.3.1|4.3.1||Question soft Reset when revisit|
+|Assesment Results - Moral Machine|||||
+|Assessment summary|4.1.1||||
+|Blank|3.3.0|3.3.1|||
+|Drag n Drop|2.5.0|||We do not need this anymore https://github.com/nachocinalli/adapt-selectchoice.|
+|Graphic|5.1.0|5.1.0|||
+|GMCQ|5.3.0 6.0.5|5.3.0 6.0.5|||
+|Hot Graphic|5.5.0|5.5.2|||
+|Matching Question|4.4.2|4.4.2|||
+|Multiple Choice Question||4.3.0|||
+|Media|5.3.2|5.6.0|||
+|Moral Machine|0.0.5||||
+|Moral Machine Results|0.1.5||||
+|My Game|1.0.0||||
+|Narrative|6.5.1|6.5.3|||
+|Slider|3.3.2|3.4.0|||
+|Text|5.0.0|5.0.0|||
+|Text input|5.0.0|5.0.0|||
+|iframe|2.1.0|N/A|||
+|Box menu|5.3.2||||
 
-Got five minutes to spare? Check out [our whistle-stop tour](https://github.com/adaptlearning/adapt_framework/wiki/Framework-in-five-minutes) of the framework to find out more.
 
-## Full Documentation
-[Visit the wiki](https://github.com/adaptlearning/adapt_framework/wiki) for full documentation, including **installation**, course authoring, developer guides, and other information.
 
-## Communication
-+ [Twitter: @AdaptLearning](https://twitter.com/adaptlearning)
-+ [Gitter](https://gitter.im/orgs/adaptlearning/rooms)
-+ [Community Site](https://community.adaptlearning.org/)
-+ [Technical Forum](https://community.adaptlearning.org/mod/forum/view.php?id=4)
-+ [Bugs / Feature Requests](https://github.com/adaptlearning/adapt_framework/issues/new)
-+ [Responsive e-Learning Forum](https://community.adaptlearning.org/mod/forum/view.php?id=56)
+## Installation
+1. [Grunt](https://gruntjs.com/getting-started), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) and [Node.js](https://nodejs.org/en/download/) must be installed on your computer first.
+2. Double check they have been installed by `{packageName} -v` on in your terminal. If they are installed the terminal should provide you with the version number you currently have installed:
 
-## Contributing to Adapt
-See [Contributing to the Adapt Framework](https://github.com/adaptlearning/adapt_framework/wiki/Contributing-to-the-Adapt-Project).
 
-## Troubleshooting, Bugs, and Feedback
-+ For help with troubleshooting, visit the [Technical Discussion Forum](https://community.adaptlearning.org/mod/forum/view.php?id=4).
-+ To report a bug, please [submit an issue via Github Issues](https://github.com/adaptlearning/adapt_framework/issues/new).
-+ To provide feedback, please use [GitHub Issues](https://github.com/adaptlearning/adapt_framework/issues/new).
+    ```node -v```
 
-## License
-<a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="adapt learning logo" align="right"></a>  Adapt is licensed under the [GNU General Public License, Version 3](https://github.com/adaptlearning/adapt_framework/blob/master/LICENSE).
+  ~Node.js version number should be returned by your terminal~
+  
+    ```npm -v```
+    
+ ~NPM version number should be returned by your terminal~
+
+    ```grunt -v```
+    
+~Grunt version number should be returned by your terminal~
+
+ 
+3. Once you have confirmed that those packages are installed, download the zip of this repository, found in the top right hand corner. 
+4. Unzip the folder.
+5. Drag the _unzipped_ folder into the location of your choice.
+6. Navigate to this folder in your terminal.
+7. Once you are inside the ODI Adapt Version 5 Testing Area folder run `npm i `. This will install all the packages you need to host the testing area locally.
+8. To exectue the server run `grunt server`
+9. Now navigate to `localhost:9005` and you should see the ODI's Adapt testing area.
