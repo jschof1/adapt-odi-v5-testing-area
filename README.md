@@ -1,6 +1,6 @@
 # The ODI Adapt Framework Version 5 Testing Area
 
-## What is the purpose of this repistory?
+## What is the purpose of this repository?
 
 This repository allows the ODI to showcase and test different components and [custom Adapt theme](https://github.com/theodi/adapt-theme-odi).
 
