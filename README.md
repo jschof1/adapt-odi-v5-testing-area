@@ -2,7 +2,7 @@
 
 ## What is the purpose of this repository?
 
-This repository allows the ODI to showcase and test different components and [custom Adapt theme](https://github.com/theodi/adapt-theme-odi).
+This repository allows the ODI to showcase and test Adapt components and the [ODI custom Adapt theme](https://github.com/theodi/adapt-theme-odi).
 
 This repository will help the learning development team at the ODI keep a track of all the *working* components, allowing them to stay on top of versioning. 
 
