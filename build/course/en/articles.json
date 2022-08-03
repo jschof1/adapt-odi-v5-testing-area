@@ -285,10 +285,10 @@
     }
   },
   {
-    "title": "New Article Title",
+    "title": "beta-1",
     "displayTitle": "",
     "body": "",
-    "_classes": "",
+    "_classes": "color-three",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,

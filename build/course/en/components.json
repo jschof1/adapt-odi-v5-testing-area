@@ -1768,8 +1768,8 @@
     "instruction": "",
     "_graphic": {
       "alt": "",
-      "large": "course/en/assets/odi-learning-header.png",
-      "small": "course/en/assets/odi-learning-header.png",
+      "large": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "small": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
       "attribution": "",
       "_url": "",
       "_target": null
@@ -1852,8 +1852,8 @@
     "instruction": "",
     "_graphic": {
       "alt": "",
-      "large": "course/en/assets/odi-learning-header.png",
-      "small": "course/en/assets/odi-learning-header.png",
+      "large": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "small": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
       "attribution": "",
       "_url": "",
       "_target": null
@@ -1861,7 +1861,7 @@
   },
   {
     "_component": "text",
-    "_classes": "",
+    "_classes": "ticks",
     "_isOptional": false,
     "_isAvailable": true,
     "_isHidden": false,
@@ -1895,7 +1895,7 @@
         "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
       }
     },
-    "instruction": "ticks "
+    "instruction": ""
   },
   {
     "_component": "graphic",
@@ -1936,8 +1936,92 @@
     "instruction": "",
     "_graphic": {
       "alt": "",
-      "large": "course/en/assets/odi-learning-header.png",
-      "small": "course/en/assets/odi-learning-header.png",
+      "large": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "small": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "attribution": "",
+      "_url": "",
+      "_target": null
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Beta Components",
+    "displayTitle": "Beta Components",
+    "body": "<p>These components are still in testing</p>",
+    "_id": "62ea4680f2eb231c4766a0d3",
+    "_parentId": "62ea4670f2eb231c4766a0d2",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "62ea4684f2eb231c4766a0d4",
+    "_parentId": "62ea4670f2eb231c4766a0d2",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "small": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
       "attribution": "",
       "_url": "",
       "_target": null

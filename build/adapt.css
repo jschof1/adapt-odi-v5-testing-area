@@ -3521,6 +3521,7 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 }
 .stacklist__button button {
   line-height: unset;
+  padding: 0.5rem !important;
   background-color: #7800db;
   color: #ffffff;
 }
@@ -5496,13 +5497,20 @@ html.a11y-disable-focusoutline input[type='range']:focus + .rangeslider .rangesl
   vertical-align: middle;
 }
 body {
-  background: #f3f2f2 url('assets/cubes.png');
+  background-image: url('https://theodi.org/wp-content/uploads/2018/02/SEGMENTS-BG-ANM2.svg');
+  background-color: #2f529f;
+  background-size: contain;
   background-position: 5px 5px;
   font-family: 'WPP Light', 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #000050;
   font-size: 17px;
   line-height: 27px;
+}
+body body {
+  background-image: url('https://theodi.org/wp-content/uploads/2018/02/SEGMENTS-BG-ANM2.svg');
+  background-color: #2f529f;
+  background-size: contain;
 }
 b,
 strong {
