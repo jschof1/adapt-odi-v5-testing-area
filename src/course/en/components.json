@@ -1690,5 +1690,173 @@
       "startText": "Click here to begin",
       "continueText": "Next"
     }
+  },
+  {
+    "_component": "text",
+    "_classes": "color-two inverted ticks",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Presentation Components",
+    "displayTitle": "Presentation Components",
+    "body": "<p>Presentation components are not assessed. They are there solely to display information to the learner.</p><p>The current presentation&nbsp;components in use are:</p><ul><li>Text</li><li>Graphic</li><li>Narrative</li><li>Hot Graphic</li><li>Media</li><li>Accordion</li></ul>",
+    "_id": "62e94512dcfd580b1bfaeb3f",
+    "_parentId": "62e944f9dcfd580b1bfaeb3e",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "62e94c09dcfd580b1bfaeb40",
+    "_parentId": "62e944f9dcfd580b1bfaeb3e",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/en/assets/odi-learning-header.png",
+      "small": "course/en/assets/odi-learning-header.png",
+      "attribution": "",
+      "_url": "",
+      "_target": null
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "inverted ticks",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Question Components Text heading",
+    "displayTitle": "Question Components",
+    "body": "<p>This module showcases all the <em>stable </em>question components that can be found in Adapt.</p><p>We will cover:</p><ul><li>Multiple Choice Questions</li><li>Graphical Multiple Choice Questions</li><li>Matching</li><li>Slider</li><li>Test Input</li></ul>",
+    "_id": "62e958a9dcfd580b1bfaeb44",
+    "_parentId": "62e95894dcfd580b1bfaeb43",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Question Component Graphic",
+    "displayTitle": "",
+    "body": "",
+    "_id": "62e958b2dcfd580b1bfaeb45",
+    "_parentId": "62e95894dcfd580b1bfaeb43",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/en/assets/odi-learning-header.png",
+      "small": "course/en/assets/odi-learning-header.png",
+      "attribution": "",
+      "_url": "",
+      "_target": null
+    }
   }
 ]

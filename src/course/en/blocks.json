@@ -1,49 +1,10 @@
 [
   {
-    "title": "b-05",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 1,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4530e",
-    "_parentId": "62de7c769ce2b43d9ea4530a",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": true,
-      "_classes": "fade-in-bottom",
-      "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": "b-40",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 2,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45315",
-    "_parentId": "62de7c769ce2b43d9ea4530b",
-    "_type": "block"
-  },
-  {
     "title": "b-65",
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 3,
+    "_trackingId": 1,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -63,7 +24,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "background-color-inverted",
-    "_trackingId": 4,
+    "_trackingId": 2,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -87,7 +48,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 5,
+    "_trackingId": 3,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -136,7 +97,159 @@
     }
   },
   {
-    "title": "b-10",
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "top",
+    "_trackingId": 4,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "62e944f9dcfd580b1bfaeb3e",
+    "_parentId": "62de7c769ce2b43d9ea4530a",
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_isInherited": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_showEndOfPage": true,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "ariaLabel": "Continue",
+        "startText": "Begin",
+        "startAriaLabel": "Begin",
+        "finalText": "Finish",
+        "finalAriaLabel": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_odi-generic": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
+    }
+  },
+  {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "top",
+    "_trackingId": 5,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "62e95894dcfd580b1bfaeb43",
+    "_parentId": "62de7c769ce2b43d9ea4530b",
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_isInherited": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_showEndOfPage": true,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "ariaLabel": "Continue",
+        "startText": "Begin",
+        "startAriaLabel": "Begin",
+        "finalText": "Finish",
+        "finalAriaLabel": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_odi-generic": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      },
+      "_minimumHeights": {
+        "_large": null,
+        "_medium": null,
+        "_small": null
+      },
+      "_isDividerBlock": false
+    }
+  },
+  {
+    "title": "b-05",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -148,12 +261,17 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4530f",
+    "_id": "62de7c769ce2b43d9ea4530e",
     "_parentId": "62de7c769ce2b43d9ea4530a",
-    "_type": "block"
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": true,
+      "_classes": "fade-in-bottom",
+      "_percentInviewVertical": 50
+    }
   },
   {
-    "title": "b-45",
+    "title": "b-40",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -165,7 +283,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45316",
+    "_id": "62de7c769ce2b43d9ea45315",
     "_parentId": "62de7c769ce2b43d9ea4530b",
     "_type": "block"
   },
@@ -260,7 +378,7 @@
     }
   },
   {
-    "title": "b-15",
+    "title": "b-10",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -272,12 +390,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45310",
+    "_id": "62de7c769ce2b43d9ea4530f",
     "_parentId": "62de7c769ce2b43d9ea4530a",
     "_type": "block"
   },
   {
-    "title": "b-50",
+    "title": "b-45",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -289,7 +407,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45317",
+    "_id": "62de7c769ce2b43d9ea45316",
     "_parentId": "62de7c769ce2b43d9ea4530b",
     "_type": "block"
   },
@@ -367,7 +485,7 @@
     }
   },
   {
-    "title": "b-20",
+    "title": "b-15",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -379,12 +497,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45311",
+    "_id": "62de7c769ce2b43d9ea45310",
     "_parentId": "62de7c769ce2b43d9ea4530a",
     "_type": "block"
   },
   {
-    "title": "b-55",
+    "title": "b-50",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -396,7 +514,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45318",
+    "_id": "62de7c769ce2b43d9ea45317",
     "_parentId": "62de7c769ce2b43d9ea4530b",
     "_type": "block"
   },
@@ -421,7 +539,7 @@
     }
   },
   {
-    "title": "b-25",
+    "title": "b-20",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -433,12 +551,12 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45312",
+    "_id": "62de7c769ce2b43d9ea45311",
     "_parentId": "62de7c769ce2b43d9ea4530a",
     "_type": "block"
   },
   {
-    "title": "b-60",
+    "title": "b-55",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -450,7 +568,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45319",
+    "_id": "62de7c769ce2b43d9ea45318",
     "_parentId": "62de7c769ce2b43d9ea4530b",
     "_type": "block"
   },
@@ -528,7 +646,7 @@
     }
   },
   {
-    "title": "b-30",
+    "title": "b-25",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -540,8 +658,25 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea45313",
+    "_id": "62de7c769ce2b43d9ea45312",
     "_parentId": "62de7c769ce2b43d9ea4530a",
+    "_type": "block"
+  },
+  {
+    "title": "b-60",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 23,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "62de7c769ce2b43d9ea45319",
+    "_parentId": "62de7c769ce2b43d9ea4530b",
     "_type": "block"
   },
   {
@@ -549,7 +684,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 23,
+    "_trackingId": 24,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -565,11 +700,28 @@
     }
   },
   {
+    "title": "b-30",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 25,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "62de7c769ce2b43d9ea45313",
+    "_parentId": "62de7c769ce2b43d9ea4530a",
+    "_type": "block"
+  },
+  {
     "title": "b-35",
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 24,
+    "_trackingId": 26,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
