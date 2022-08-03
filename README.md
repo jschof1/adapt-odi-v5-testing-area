@@ -59,20 +59,20 @@ Below includes a version tracker table which will help the team keep a track of 
 2. Double check they have been installed by `{packageName} -v` on in your terminal. If they are installed the terminal should provide you with the version number you currently have installed:
 
 
-    `node -v`
+  ``` node -v ```
 
-Node.js version number should be returned by your terminal
+Node.js version number should be returned by the terminal
   
-    `npm -v`
+  ``` npm -v ```
     
-NPM version number should be returned by your terminal
+NPM version number should be returned by the terminal
 
-    `grunt -v`
+  ``` grunt -v ```
     
-Grunt version number should be returned by your terminal
+Grunt version number should be returned by the terminal
 
  
-3. Once you have confirmed that those packages are installed, download the zip of this repository, found in the top right hand corner. 
+3. Once you have confirmed that those packages are installed, download the zip of this repository by clicking [here](https://github.com/jschof1/adapt-odi-v5-testing-area/archive/refs/heads/master.zip). 
 
 4. Unzip the folder.
 
@@ -80,7 +80,7 @@ Grunt version number should be returned by your terminal
 
 6. Navigate to this folder in your terminal.
 
-7. Once you are inside the ODI Adapt Version 5 Testing Area folder run `npm i `. This will install all the packages you need to host the testing area locally.
+7. Once you are inside the ODI Adapt Version 5 Testing Area folder run `npm i`. This will install all the packages you need to host the testing area locally.
 
 8. Run `grunt build`
 
