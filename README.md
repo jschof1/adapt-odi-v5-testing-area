@@ -6,7 +6,7 @@ This repository allows the ODI to showcase and test Adapt components and their c
 
 This repository will help the learning development team at the ODI keep a track of all the *working* components, allowing them to stay on top of versioning. 
 
-Below includes a version tracker table which will help the team keep a track of all the stable component versions:
+Below includes a version tracker table which keeps a track of all the *stable* component versions currently in use:
 
 ||||||
 |--- |--- |--- |--- |--- |
