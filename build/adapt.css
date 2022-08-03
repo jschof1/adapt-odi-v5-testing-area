@@ -5500,17 +5500,11 @@ body {
   background-image: url('https://theodi.org/wp-content/uploads/2018/02/SEGMENTS-BG-ANM2.svg');
   background-color: #2f529f;
   background-size: contain;
-  background-position: 5px 5px;
   font-family: 'WPP Light', 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #000050;
   font-size: 17px;
   line-height: 27px;
-}
-body body {
-  background-image: url('https://theodi.org/wp-content/uploads/2018/02/SEGMENTS-BG-ANM2.svg');
-  background-color: #2f529f;
-  background-size: contain;
 }
 b,
 strong {
@@ -5581,7 +5575,7 @@ strong {
   font-family: 'WPP Light', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .menu__title {
-  color: #000050;
+  color: white;
 }
 .page__title {
   color: #000050;
