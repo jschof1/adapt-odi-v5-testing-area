@@ -744,7 +744,7 @@
     "_id": "62de7c779ce2b43d9ea4534a",
     "_parentId": "62de7c769ce2b43d9ea4531a",
     "_type": "component",
-    "_layout": "left",
+    "_layout": "right",
     "_pageLevelProgress": {
       "_isEnabled": true,
       "_isCompletionIndicatorEnabled": false
@@ -801,7 +801,7 @@
     "_id": "62de7c779ce2b43d9ea4534b",
     "_parentId": "62de7c769ce2b43d9ea4531a",
     "_type": "component",
-    "_layout": "right",
+    "_layout": "left",
     "instruction": "",
     "_graphic": {
       "src": "course/en/assets/ddc2a1bff0a87074bd48eff0f5ef22b3aab220d1.png",
@@ -1828,6 +1828,90 @@
     "body": "",
     "_id": "62e958b2dcfd580b1bfaeb45",
     "_parentId": "62e95894dcfd580b1bfaeb43",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/en/assets/odi-learning-header.png",
+      "small": "course/en/assets/odi-learning-header.png",
+      "attribution": "",
+      "_url": "",
+      "_target": null
+    }
+  },
+  {
+    "_component": "text",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Assessment Components",
+    "displayTitle": "Assesment Components",
+    "body": "<p>Assessment components allow us to track a learner's progress, they allow us to display a score to the user and send their progress to any SCORM or xAPI/TinCan LRS. This module will showcase a variety of extensions and components, including:</p><ul><li>Tutor</li><li>Assessment Results</li><li>Assessment</li></ul><p>This module has a quiz which will test your knowledge of the Adapt Framework structure.&nbsp;</p>",
+    "_id": "62ea2437dcfd580b1bfaeb4b",
+    "_parentId": "62ea2429dcfd580b1bfaeb4a",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": "ticks "
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "62ea244fdcfd580b1bfaeb4c",
+    "_parentId": "62ea2429dcfd580b1bfaeb4a",
     "_type": "component",
     "_layout": "right",
     "_onScreen": {

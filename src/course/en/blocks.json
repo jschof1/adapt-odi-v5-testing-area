@@ -1,30 +1,10 @@
 [
   {
-    "title": "b-65",
-    "displayTitle": "",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 1,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_requireCompletionOf": -1,
-    "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4531a",
-    "_parentId": "62de7c769ce2b43d9ea4530c",
-    "_type": "block",
-    "_assessment": {
-      "_quizBankID": 1
-    }
-  },
-  {
     "title": "b-100",
     "displayTitle": "",
     "body": "",
     "_classes": "background-color-inverted",
-    "_trackingId": 2,
+    "_trackingId": 1,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -48,7 +28,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "",
-    "_trackingId": 3,
+    "_trackingId": 2,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -101,7 +81,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "top",
-    "_trackingId": 4,
+    "_trackingId": 3,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -177,7 +157,7 @@
     "displayTitle": "",
     "body": "",
     "_classes": "top",
-    "_trackingId": 5,
+    "_trackingId": 4,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -249,6 +229,59 @@
     }
   },
   {
+    "title": "New Block Title",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 5,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "62ea2429dcfd580b1bfaeb4a",
+    "_parentId": "62de7c769ce2b43d9ea4530c",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 1
+    },
+    "_trickle": {
+      "_isEnabled": false,
+      "_isInherited": false,
+      "_autoScroll": false,
+      "_scrollDuration": 500,
+      "_scrollTo": "@block +1",
+      "_button": {
+        "_isEnabled": true,
+        "_styleBeforeCompletion": "hidden",
+        "_styleAfterClick": "hidden",
+        "_isFullWidth": true,
+        "_autoHide": false,
+        "_showEndOfPage": true,
+        "_className": "",
+        "_hasIcon": false,
+        "text": "Continue",
+        "ariaLabel": "Continue",
+        "startText": "Begin",
+        "startAriaLabel": "Begin",
+        "finalText": "Finish",
+        "finalAriaLabel": "Finish",
+        "_component": "trickle-button"
+      },
+      "_stepLocking": {
+        "_isEnabled": true,
+        "_isCompletionRequired": true,
+        "_isLockedOnRevisit": false
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
     "title": "b-05",
     "displayTitle": "",
     "body": "",
@@ -288,7 +321,7 @@
     "_type": "block"
   },
   {
-    "title": "b-75",
+    "title": "b-65",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -300,7 +333,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4531b",
+    "_id": "62de7c769ce2b43d9ea4531a",
     "_parentId": "62de7c769ce2b43d9ea4530c",
     "_type": "block",
     "_assessment": {
@@ -412,7 +445,7 @@
     "_type": "block"
   },
   {
-    "title": "b-80",
+    "title": "b-75",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -424,7 +457,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4531c",
+    "_id": "62de7c769ce2b43d9ea4531b",
     "_parentId": "62de7c769ce2b43d9ea4530c",
     "_type": "block",
     "_assessment": {
@@ -519,7 +552,7 @@
     "_type": "block"
   },
   {
-    "title": "b-85",
+    "title": "b-80",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -531,11 +564,11 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4531d",
+    "_id": "62de7c769ce2b43d9ea4531c",
     "_parentId": "62de7c769ce2b43d9ea4530c",
     "_type": "block",
     "_assessment": {
-      "_quizBankID": 2
+      "_quizBankID": 1
     }
   },
   {
@@ -573,7 +606,7 @@
     "_type": "block"
   },
   {
-    "title": "b-90",
+    "title": "b-85",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -585,7 +618,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4531e",
+    "_id": "62de7c769ce2b43d9ea4531d",
     "_parentId": "62de7c769ce2b43d9ea4530c",
     "_type": "block",
     "_assessment": {
@@ -680,7 +713,7 @@
     "_type": "block"
   },
   {
-    "title": "b-95",
+    "title": "b-90",
     "displayTitle": "",
     "body": "",
     "_classes": "",
@@ -692,7 +725,7 @@
     "_isVisible": true,
     "_requireCompletionOf": -1,
     "_ariaLevel": 0,
-    "_id": "62de7c769ce2b43d9ea4531f",
+    "_id": "62de7c769ce2b43d9ea4531e",
     "_parentId": "62de7c769ce2b43d9ea4530c",
     "_type": "block",
     "_assessment": {
@@ -717,11 +750,31 @@
     "_type": "block"
   },
   {
-    "title": "b-35",
+    "title": "b-95",
     "displayTitle": "",
     "body": "",
     "_classes": "",
     "_trackingId": 26,
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "62de7c769ce2b43d9ea4531f",
+    "_parentId": "62de7c769ce2b43d9ea4530c",
+    "_type": "block",
+    "_assessment": {
+      "_quizBankID": 2
+    }
+  },
+  {
+    "title": "b-35",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "",
+    "_trackingId": 27,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
