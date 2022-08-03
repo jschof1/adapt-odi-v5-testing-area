@@ -11,45 +11,45 @@ Below includes a version tracker table which keeps a track of all the *stable* c
 ||||||
 |--- |--- |--- |--- |--- |
 |Thing|D Version|J Version|Link (if applicable)|Comments|
-|Adapt Framework|5.18.1|5.18.0|||
-|Authoring tool|0.10.5|0.10.5|||
+|Adapt Framework|5.18.1|5.18.0|https://github.com/adaptlearning/adapt_framework||
+|Authoring tool|0.10.5|0.10.5|https://github.com/adaptlearning/adapt_authoring||
 |Article block slider|3.1.1|3.4.0|||
-|Assessment|4.5.3 4.6.1|4.6.1||For GMCQ: tick percentage base Question behavoiur: all three ticked|
-|Bookmarking|3.3.1|3.3.3|||
-|Developer Tools|3.0.11|3.0.11|||
+|Assessment|4.5.3 4.6.1|4.6.1|https://github.com/adaptlearning/adapt-contrib-assessment|For GMCQ: tick percentage base Question behavoiur: all three ticked|
+|Bookmarking|3.3.1|3.3.3|https://github.com/adaptlearning/adapt-contrib-bookmarking||
+|Developer Tools|3.0.11|3.0.11|https://github.com/cgkineo/adapt-devtools||
 |Footer Links|0.2.1|0.2.1|https://github.com/theodi/adapt-odi-footerLink||
-|Language Picker|4.4.0|4.5.0|||
+|Language Picker|4.4.0|4.5.0|https://github.com/adaptlearning/adapt-contrib-languagePicker||
 |Licence terms (in tutor)|0.5.1|0.5.1|https://github.com/theodi/adapt-odi-licence||
-|Page level progress|5.3.1|1.9.4|||
-|Resources|4.2.0|4.2.0|||
+|Page level progress|5.3.1|1.9.4|https://github.com/adaptlearning/adapt-contrib-pageLevelProgress||
+|Resources|4.2.0|4.2.0|https://github.com/adaptlearning/adapt-contrib-resources||
 |Simple about page (in tutor)|0.5.2|0.5.2|https://github.com/theodi/adapt-contrib-aboutPage||
-|Spoor|3.10.1|4.2.0|||
-|Trickle|5.2.3|5.2.6|||
-|Tutor|4.0.0|4.0.0|||
+|Spoor|3.10.1|4.2.0|https://github.com/adaptlearning/adapt-contrib-trickle||
+|Trickle|5.2.3|5.2.6|https://github.com/adaptlearning/adapt-contrib-trickle||
+|Tutor|4.0.0|4.0.0|https://github.com/adaptlearning/adapt-contrib-tutor||
 |Vanilla theme||5.7.0|https://github.com/adaptlearning/adapt-contrib-vanilla/releases/tag/v5.7.0||
 |xAPI|0.8.3-3|0.8.3-3|https://github.com/theodi/adapt-contrib-xapi/tree/odi-guid-0.8.3-cookies||
 |ODI Generic (theme)|0.9.22||https://github.com/theodi/adapt-theme-odi-generic/tree/framework-v5||
-|Accordion|6.0.0|5.3.0|||
-|Assessment results|4.3.1|4.3.1||Question soft Reset when revisit|
+|Accordion|6.0.0|5.3.0|https://github.com/adaptlearning/adapt-contrib-accordion||
+|Assessment results|4.3.1|4.3.1|https://github.com/adaptlearning/adapt-contrib-assessmentResults|Question soft Reset when revisit|
 |Assesment Results - Moral Machine|||||
 |Assessment summary|4.1.1||||
-|Blank|3.3.0|3.3.1|||
+|Blank|3.3.0|3.3.1|https://github.com/adaptlearning/adapt-contrib-blank||
 |Drag n Drop|2.5.0|||We do not need this anymore https://github.com/nachocinalli/adapt-selectchoice.|
-|Graphic|5.1.0|5.1.0|||
-|GMCQ|5.3.0 6.0.5|5.3.0 6.0.5|||
-|Hot Graphic|5.5.0|5.5.2|||
-|Matching Question|4.4.2|4.4.2|||
-|Multiple Choice Question||4.3.0|||
-|Media|5.3.2|5.6.0|||
+|Graphic|5.1.0|5.1.0|https://github.com/adaptlearning/adapt-contrib-graphic||
+|GMCQ|5.3.0 6.0.5|5.3.0 6.0.5|https://github.com/adaptlearning/adapt-contrib-gmcq||
+|Hot Graphic|5.5.0|5.5.2|https://github.com/adaptlearning/adapt-contrib-hotgraphic||
+|Matching Question|4.4.2|4.4.2|https://github.com/adaptlearning/adapt-contrib-matching||
+|Multiple Choice Question||4.3.0||https://github.com/adaptlearning/adapt-contrib-mcq|
+|Media|5.3.2|5.6.0|https://github.com/adaptlearning/adapt-contrib-media||
 |Moral Machine|0.0.5||||
 |Moral Machine Results|0.1.5||||
 |My Game|1.0.0||||
-|Narrative|6.5.1|6.5.3|||
-|Slider|3.3.2|3.4.0|||
-|Text|5.0.0|5.0.0|||
-|Text input|5.0.0|5.0.0|||
-|iframe|2.1.0|N/A|||
-|Box menu|5.3.2||||
+|Narrative|6.5.1|6.5.3|https://github.com/adaptlearning/adapt-contrib-narrative||
+|Slider|3.3.2|3.4.0|https://github.com/adaptlearning/adapt-contrib-slider||
+|Text|5.0.0|5.0.0|https://github.com/adaptlearning/adapt-contrib-text||
+|Text input|5.0.0|5.0.0|https://github.com/adaptlearning/adapt-contrib-textInput||
+|iframe|2.1.0|N/A|https://github.com/LearningPool/adapt-contrib-responsiveIframe||
+|Box menu|5.3.2||https://github.com/adaptlearning/adapt-contrib-boxMenu||
 
 
 
