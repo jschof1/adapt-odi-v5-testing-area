@@ -7,17 +7,17 @@
 
   &__item {
     position: relative;
+    background-color: @item-color;
+    color: @item-color-inverted;
     padding: @item-padding;
     margin-bottom: @item-margin / 2;
-    background-color: @item-color;
-    color: @font-color-inverted;
-
     &.show {
       position: static !important;
     }
   }
 
   &__button {
+    background-color: @item-color;
     display: none;
     position: absolute;
     top: 0;

@@ -3499,15 +3499,16 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 }
 .stacklist__item {
   position: relative;
-  padding: 1rem;
-  margin-bottom: 0.25rem;
   background-color: #7800db;
   color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 0.25rem;
 }
 .stacklist__item.show {
   position: static !important;
 }
 .stacklist__button {
+  background-color: #7800db;
   display: none;
   position: absolute;
   top: 0;
@@ -52892,36 +52893,6 @@ a.button {
 .block.inverted.color-ten .hotgraphic__pin:not(.has-pin-image) {
   background-color: #ffffff;
   color: #000000;
-}
-.graphic.color-one img {
-  background-color: #000050;
-}
-.graphic.color-two img {
-  background-color: #7800db;
-}
-.graphic.color-three img {
-  background-color: #00cad5;
-}
-.graphic.color-four img {
-  background-color: #ff5c00;
-}
-.graphic.color-five img {
-  background-color: #de4a8d;
-}
-.graphic.color-six img {
-  background-color: #ff6600;
-}
-.graphic.color-seven img {
-  background-color: #333666;
-}
-.graphic.color-eight img {
-  background-color: #006699;
-}
-.graphic.color-nine img {
-  background-color: #006633;
-}
-.graphic.color-ten img {
-  background-color: #000000;
 }
 .hotgraphic .spectrum-marker {
   width: 64px;

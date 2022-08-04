@@ -1,1 +1,32 @@
-define("backbone.controller",["backbone","underscore"],function(i,e){var n=i.Controller=function(i){i=i||{},this.preinitialize.apply(this,arguments),e.extend(this,e.pick(i,t)),this.initialize.apply(this,arguments)},t=["model","collection"];return e.extend(n.prototype,i.Events,{preinitialize:function(){},initialize:function(){}}),n.extend=i.View.extend,i});
+// 2017-04-11 https://github.com/cgkineo/backbone.controller
+/*
+  Adds an extensible class to backbone, which doesn't have a Model or DOM element (.$el) and isn't a Collection,.
+  It still works exactly like Model, View and Collection, in that it has the Events API, .extend and an initialize function
+*/
+define("backbone.controller", [
+  "backbone",
+  "underscore"
+], function(Backbone, _) {
+
+  var Controller = Backbone.Controller = function(options) {
+    options || (options = {});
+    this.preinitialize.apply(this, arguments);
+    _.extend(this, _.pick(options, controllerOptions));
+    this.initialize.apply(this, arguments);
+  };
+
+  var controllerOptions = ['model', 'collection'];
+
+  _.extend(Controller.prototype, Backbone.Events, {
+
+    preinitialize: function() {},
+
+    initialize: function() {}
+
+  });
+
+  Controller.extend = Backbone.View.extend;
+
+  return Backbone;
+
+});

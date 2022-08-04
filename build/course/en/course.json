@@ -6,7 +6,7 @@
   "description": "A sample course demonstrating the capabilities of the Adapt Framework",
   "instruction": "",
   "_htmlClasses": "",
-  "_latestTrackingId": 27,
+  "_latestTrackingId": 56,
   "_buttons": {
     "_submit": {
       "buttonText": "Submit",
@@ -176,6 +176,17 @@
       }
     },
     "_extensions": {
+      "_graphicLottie": {
+        "_isEnabled": true,
+        "_fileExtension": "svgz",
+        "_loops": -1,
+        "_autoPlay": true,
+        "_onScreenPercentInviewVertical": 1,
+        "_offScreenPause": true,
+        "_offScreenRewind": true,
+        "_showPauseControl": false,
+        "_onPauseRewind": false
+      },
       "_resources": {
         "resources": "Additional resources."
       },

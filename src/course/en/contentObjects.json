@@ -1,5 +1,71 @@
 [
   {
+    "title": "elearning intro",
+    "displayTitle": "elearning intro",
+    "body": "Find out what presentation components are available within the core bundle and how you might consider using them within your courses.",
+    "_classes": "",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "Scroll down to see what presentation components are available as part of the v5 core bundle.",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "2 mins",
+    "_lockedBy": [],
+    "_lockType": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "contentTest",
+    "_parentId": "course",
+    "_type": "page",
+    "_graphic": {
+      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "alt": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": false,
+      "_excludeAssessments": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
+    "title": "Adapt at the ODI",
+    "displayTitle": "elearning intro",
+    "body": "Find out what presentation components are available within the core bundle and how you might consider using them within your courses.",
+    "_classes": "",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "Scroll down to see what presentation components are available as part of the v5 core bundle.",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "2 mins",
+    "_lockedBy": [],
+    "_lockType": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "contentTest2",
+    "_parentId": "course",
+    "_type": "page",
+    "_graphic": {
+      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "alt": ""
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": false,
+      "_excludeAssessments": false,
+      "_isCompletionIndicatorEnabled": false
+    }
+  },
+  {
     "title": "Presentation Components",
     "displayTitle": "Presentation Components",
     "body": "Find out what presentation components are available within the core bundle and how you might consider using them within your courses.",

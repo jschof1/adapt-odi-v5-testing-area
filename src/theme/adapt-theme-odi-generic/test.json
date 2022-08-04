@@ -1,0 +1,84 @@
+{
+    "_component": "text",
+    "_classes": "color-two inverted ticks",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "Using Adapt at the ODI",
+    "displayTitle": "Using Adapt at the ODI",
+    "body": "<p>This is a short module created to introduce you to some of the basics of Adapt and will provide some handy information on how to use Adapt within the context of the ODI's own tweaks.</p><p> This module should teach you how to...</p><ul><li>Think about your audience</li><li>Refine your style</li><li>Design and structure an Adapt module</li><li>Use themes</li><li>Deploy a course</li></ul>",
+    "_id": "eLearningIntroText",
+    "_parentId": "blockTitle0",
+    "_type": "component",
+    "_layout": "left",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": ""
+  },
+  {
+    "_component": "graphic",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "New Component Title",
+    "displayTitle": "",
+    "body": "",
+    "_id": "eLearningIntroGraphic",
+    "_parentId": "blockTitle0",
+    "_type": "component",
+    "_layout": "right",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_isCompletionIndicatorEnabled": false
+    },
+    "_tutor": {
+      "_isInherited": true,
+      "_type": "notify",
+      "_classes": "",
+      "_hasNotifyBottomButton": false,
+      "_button": {
+        "text": "{{_globals._extensions._tutor.hideFeedback}}",
+        "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+      }
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "small": "course/en/assets/f64ad121fc8e0250264e5d5f00c90d78cd6271a0.png",
+      "attribution": "",
+      "_url": "",
+      "_target": null
+    }
+  },

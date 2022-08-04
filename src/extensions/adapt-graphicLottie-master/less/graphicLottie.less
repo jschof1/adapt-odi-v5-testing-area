@@ -1,0 +1,69 @@
+.graphiclottie__player {
+  position: relative;
+
+  canvas {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  &.has-graphiclottie-play-pause {
+    cursor: pointer;
+  }
+
+  &.is-graphiclottie-playing .graphiclottie__playpause {
+    .icon-video-pause;
+  }
+
+  &.is-graphiclottie-paused .graphiclottie__playpause {
+    .icon-video-play;
+  }
+
+  &.is-graphiclottie-playing .graphiclottie__controls {
+    opacity: 0;
+  }
+
+  html:not(.touch) &.is-graphiclottie-playing:hover .graphiclottie__controls,
+  html:not(.touch) &.is-graphiclottie-playing:focus-within .graphiclottie__controls {
+    opacity: 1;
+  }
+
+  &.is-graphiclottie-paused .graphiclottie__controls {
+    transition: none;
+    opacity: 1;
+  }
+
+  &.is-graphiclottie-paused.is-graphiclottie-nocontrols .graphiclottie__controls,
+  &.is-graphiclottie-nocontrols .graphiclottie__controls {
+    transition: none;
+    opacity: 0;
+  }
+
+  .graphiclottie__controls {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.1em;
+    transition: opacity 0.4s ease-in-out 0.4s;
+    opacity: 0;
+
+    button {
+      background: transparent;
+
+      &.is-disabled {
+        color: rgba(16, 16, 16, 0.3);
+      }
+
+      &:before {
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  .graphiclottie__playpause {
+    margin-left: auto;
+  }
+
+}
