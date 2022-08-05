@@ -1,15 +1,15 @@
 [
   {
-    "title": "elearning intro",
-    "displayTitle": "elearning intro",
-    "body": "Find out what presentation components are available within the core bundle and how you might consider using them within your courses.",
+    "title": "Adapt at the ODI",
+    "displayTitle": "Using Adapt at the ODI",
+    "body": "Learn how the basics of everything e-learning at the ODI and how to structure, write and deploy them",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
     "instruction": "Scroll down to see what presentation components are available as part of the v5 core bundle.",
     "_htmlClasses": "",
     "linkText": "View",
-    "duration": "2 mins",
+    "duration": "1 mins",
     "_lockedBy": [],
     "_lockType": "",
     "_isOptional": false,
@@ -22,7 +22,7 @@
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "src": "course/en/assets/rectangle-team-work/req-team-work(1).png",
       "alt": ""
     },
     "_pageLevelProgress": {
@@ -33,16 +33,16 @@
     }
   },
   {
-    "title": "Adapt at the ODI",
-    "displayTitle": "elearning intro",
-    "body": "Find out what presentation components are available within the core bundle and how you might consider using them within your courses.",
+    "title": "An Intro to using Adapt",
+    "displayTitle": "An Intro to using Adapt",
+    "body": "Learn how to use Adapt – a multi-award winning tool for developing engaging and advanced eLearning.",
     "_classes": "",
     "subtitle": "",
     "pageBody": "",
     "instruction": "Scroll down to see what presentation components are available as part of the v5 core bundle.",
     "_htmlClasses": "",
     "linkText": "View",
-    "duration": "2 mins",
+    "duration": "3 mins",
     "_lockedBy": [],
     "_lockType": "",
     "_isOptional": false,
@@ -55,7 +55,7 @@
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "src": "course/en/assets/rectangle-team-work/req-team-work(9).png",
       "alt": ""
     },
     "_pageLevelProgress": {
@@ -88,7 +88,7 @@
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "src": "course/en/assets/rectangle-team-work/req-team-work(2).png",
       "alt": ""
     },
     "_pageLevelProgress": {
@@ -108,7 +108,7 @@
     "instruction": "Scroll down to see what question components are available as part of the v5 core bundle.",
     "_htmlClasses": "",
     "linkText": "View",
-    "duration": "2 mins",
+    "duration": "4 mins",
     "_lockedBy": [],
     "_lockType": "",
     "_isOptional": false,
@@ -121,7 +121,7 @@
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "src": "course/en/assets/rectangle-team-work/req-team-work(7).png",
       "alt": ""
     },
     "_pageLevelProgress": {
@@ -154,7 +154,7 @@
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png",
+      "src": "course/en/assets/rectangle-team-work/req-team-work(19).png",
       "alt": ""
     },
     "_pageLevelProgress": {
@@ -174,7 +174,7 @@
     "instruction": "",
     "_htmlClasses": "",
     "linkText": "View",
-    "duration": "",
+    "duration": "1 min",
     "_lockedBy": [],
     "_lockType": "",
     "_isOptional": false,
@@ -187,8 +187,8 @@
     "_parentId": "course",
     "_type": "page",
     "_graphic": {
-      "alt": "",
-      "src": "course/en/assets/94310c7aace8f4ad8abd2cbc17f17bce4dcc26f1.png"
+      "src": "course/en/assets/rectangle-team-work/req-team-work(5).png",
+      "alt": ""
     },
     "_onScreen": {
       "_isEnabled": false,

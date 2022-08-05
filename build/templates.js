@@ -3537,6 +3537,66 @@ this["Handlebars"]["templates"]["devtoolsNavigation"] = Handlebars.template({"co
     return "<button class=\"btn-icon nav__btn nav__devtools-btn devtools__nav-btn\">\n  <div class=\"icon\"></div>\n</button>\n";
 },"useData":true});
 
+this["Handlebars"]["templates"]["graphicLottie"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    return " aria-hidden=\"true\"";
+},"3":function(container,depth0,helpers,partials,data) {
+    return " has-graphiclottie-play-pause";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "  <canvas "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"alt") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":3,"column":10},"end":{"line":3,"column":48}}})) != null ? stack1 : "")
+    + "></canvas>\n  <div class=\"graphiclottie__controls\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"_showPauseControl") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":4},"end":{"line":7,"column":11}}})) != null ? stack1 : "")
+    + "  </div>\n";
+},"6":function(container,depth0,helpers,partials,data) {
+    var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "aria-label=\""
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"alt") || (depth0 != null ? lookupProperty(depth0,"alt") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"alt","hash":{},"data":data,"loc":{"start":{"line":3,"column":33},"end":{"line":3,"column":40}}}) : helper)))
+    + "\"";
+},"8":function(container,depth0,helpers,partials,data) {
+    return "    <button class=\"graphiclottie__playpause icon\" type=\"button\" aria-label=\"Pause\"></button>\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "    <img src=\""
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"_src") || (depth0 != null ? lookupProperty(depth0,"_src") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"_src","hash":{},"data":data,"loc":{"start":{"line":10,"column":14},"end":{"line":10,"column":22}}}) : helper)))
+    + "\" "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"alt") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":10,"column":24},"end":{"line":10,"column":62}}})) != null ? stack1 : "")
+    + ">\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div"
+    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,(depth0 != null ? lookupProperty(depth0,"alt") : depth0),{"name":"unless","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":4},"end":{"line":1,"column":49}}})) != null ? stack1 : "")
+    + " class=\"graphiclottie__player is-graphiclottie-nocontrols "
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"_showPauseControl") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":107},"end":{"line":1,"column":168}}})) != null ? stack1 : "")
+    + "\">\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"_isAnimation") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(10, data, 0),"data":data,"loc":{"start":{"line":2,"column":2},"end":{"line":11,"column":9}}})) != null ? stack1 : "")
+    + "</div>\n";
+},"useData":true});
+
 this["Handlebars"]["templates"]["boxMenu"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
