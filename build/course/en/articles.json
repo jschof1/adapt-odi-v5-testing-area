@@ -1,4 +1,4 @@
-[  
+[
   {
   "title": "a-05",
   "displayTitle": "",
@@ -568,6 +568,72 @@
         "_backgroundPosition": null
       }
     }
+  },
+    {
+    "title": "beta-2",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "color-four",
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "fileInputArticle",
+    "_parentId": "62de8ad02bdedd05ba88d17d",
+    "_type": "article",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_isEnabled": true,
+      "_id": "1",
+      "_attempts": -1,
+      "_isPercentageBased": true,
+      "_scoreToPass": 60,
+      "_correctToPass": 60,
+      "_includeInTotalScore": true,
+      "_assessmentWeight": 1,
+      "_suppressMarking": true,
+      "_isResetOnRevisit": true,
+      "_allowResetIfPassed": true,
+      "_scrollToOnReset": false,
+      "_randomisation": {
+        "_isEnabled": false,
+        "_blockCount": -1
+      },
+      "_banks": {
+        "_isEnabled": false,
+        "_split": "",
+        "_randomisation": false
+      },
+      "_questions": {
+        "_resetType": "hard",
+        "_canShowFeedback": true,
+        "_canShowMarking": true,
+        "_canShowModelAnswer": false
+      }
+  }
+},
+  {
+    "title": "Results from File Input",
+    "displayTitle": "",
+    "body": "",
+    "_classes": "invert-even color-four",
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_id": "FileInputArticleResults",
+    "_parentId": "62de8ad02bdedd05ba88d17d",
+    "_type": "article"
   },
   {
     "title": "a-20",

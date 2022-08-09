@@ -6,7 +6,7 @@
   "description": "A sample course demonstrating the capabilities of the Adapt Framework",
   "instruction": "",
   "_htmlClasses": "",
-  "_latestTrackingId": 56,
+  "_latestTrackingId": 57,
   "_buttons": {
     "_submit": {
       "buttonText": "Submit",
@@ -206,6 +206,11 @@
       },
       "_tutor": {
         "hideFeedback": "Hide feedback"
+      },
+      "_xapi": {
+        "confirm": "OK",
+        "lrsConnectionErrorTitle": "LRS not available",
+        "lrsConnectionErrorMessage": "We were unable to connect to your Learning Record Store (LRS). This means that your progress cannot be recorded."
       }
     },
     "_menu": {

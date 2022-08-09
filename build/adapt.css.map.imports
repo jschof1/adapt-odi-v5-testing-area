@@ -41,6 +41,7 @@
 @import 'src/components/adapt-contrib-slider/less/slider.less';
 @import 'src/components/adapt-contrib-textInput/less/textinput.less';
 @import 'src/components/adapt-dropItems/less/drop-items.less';
+@import 'src/components/adapt-odi-fileInput/less/fileinput.less';
 @import 'src/components/adapt-stacklist/less/stacklist.less';
 @import 'src/extensions/adapt-contrib-languagePicker/less/languagePicker.less';
 @import 'src/extensions/adapt-contrib-pageLevelProgress/less/pageLevelProgress.less';
@@ -51,7 +52,7 @@
 @import 'src/extensions/adapt-devtools/less/devtools.less';
 @import 'src/extensions/adapt-devtools/less/devtoolsAnnotation.less';
 @import 'src/extensions/adapt-devtools/less/devtoolsMap.less';
-@import 'src/extensions/adapt-graphicLottie-master/less/graphicLottie.less';
+@import 'src/extensions/adapt-graphicLottie/less/graphicLottie.less';
 @import 'src/menu/adapt-contrib-boxMenu/less/boxMenu.less';
 @import 'src/menu/adapt-contrib-boxMenu/less/boxMenuGroup.less';
 @import 'src/menu/adapt-contrib-boxMenu/less/boxMenuItem.less';

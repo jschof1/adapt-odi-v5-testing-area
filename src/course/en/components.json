@@ -1310,6 +1310,170 @@
     ]
   },
   {
+    "_component": "fileinput",
+    "_classes": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_isResetOnRevisit": "hard",
+    "_ariaLevel": 0,
+    "_disableAccessibilityState": false,
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "_id": "62de7c779ce2b43d9ea4535e",
+    "_parentId": "fileInputTest",
+    "_type": "component",
+    "_attempts": 1,
+    "_shouldDisplayAttempts": false,
+    "_resetType": "soft",
+    "_layout" : "full",
+    "_isRandom": false,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_canShowFeedback": true,
+    "_canShowMarking": true,
+    "_recordInteraction": true,
+    "_hasItemScoring" : true,
+    "_schema": [
+      {
+      "type": "object",
+      "properties": {
+        "OrderID": {
+          "type": "integer"
+        },
+        "Customer": {
+          "type": "string"
+        },
+        "Booker": {
+          "type": "string"
+        },
+        "Ordered": {
+          "type": "integer"
+        },
+        "Required": {
+          "type": "integer"
+        },
+        "Shipped": {
+          "type": "integer"
+        },
+        "REGION": {
+          "type": "string"
+        },
+        "Country": {
+          "type": "string"
+        },
+        "Value": {
+          "type": "string"
+        },
+        "Rating": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    }
+  ],
+    "_items": [
+      {
+        "text": "",
+        "feedback": "",
+        "_score": 0
+      }
+    ],
+    "_feedback": {
+        "title": "Feedback",
+        "correct": "This feedback will appear if you answered the question correctly.",
+        "_incorrect": {
+            "notFinal": "",
+            "final": ""
+        },
+        "_partlyCorrect": {
+            "notFinal": "",
+            "final": "This feedback will appear if you answered part of the question correctly."
+        }
+    },
+    "_comment": "You only need to include _buttons if you want to override the button labels that are set in course.json",
+    "_buttons": {
+        "_submit": {
+            "buttonText": "Submit",
+            "ariaLabel": "Select here to submit your answer."
+        },
+        "_reset": {
+            "buttonText": "Reset",
+            "ariaLabel": ""
+        },
+        "_showCorrectAnswer": {
+            "buttonText": "Correct Answer",
+            "ariaLabel": ""
+        },
+        "_hideCorrectAnswer": {
+            "buttonText": "My Answer",
+            "ariaLabel": ""
+        },
+        "_showFeedback": {
+            "buttonText": "Show feedback",
+            "ariaLabel": ""
+        },
+        "remainingAttemptsText": "attempts remaining",
+        "remainingAttemptText": "final attempt"
+    },
+    "_pageLevelProgress": {
+        "_isEnabled": true
+    }
+},
+{
+  "_component": "assessmentResults",
+  "_classes": "",
+  "_isOptional": false,
+  "_isAvailable": true,
+  "_isHidden": false,
+  "_isVisible": true,
+  "_isResetOnRevisit": "false",
+  "_ariaLevel": 0,
+  "_disableAccessibilityState": false,
+  "title": "assessmentResults",
+  "displayTitle": "",
+  "body": "",
+  "_id": "assessmentResultsFileInputTest",
+  "_parentId": "resultsFileBeta",
+  "_type": "component",
+  "_layout": "full",
+  "_onScreen": {
+    "_isEnabled": false,
+    "_classes": "",
+    "_percentInviewVertical": 50
+  },
+  "_tutor": {
+    "_type": "notify",
+    "_classes": "",
+    "_hasNotifyBottomButton": false,
+    "_button": {
+      "text": "{{_globals._extensions._tutor.hideFeedback}}",
+      "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+    }
+  },
+  "instruction": "",
+  "_isVisibleBeforeCompletion": true,
+  "_setCompletionOn": "inview",
+  "_resetType": "inherit",
+  "_assessmentId": "",
+  "_retry": {
+    "button": "Retry Assessment",
+    "feedback": "",
+    "_routeToAssessment": false
+  },
+  "_completionBody": "<p>{{{score}}}&nbsp;– To display score.<br />{{{maxScore}}}&nbsp;– To display total score<br />{{{scoreAsPercent}}}&nbsp;– To display passed percentage.<br />{{{feedback}}}&nbsp;– To show the feedback messages (correct or incorrect feedback)</p>",
+  "_bands": [
+    {
+      "_score": 0,
+      "feedback": "",
+      "_allowRetry": true,
+      "_classes": ""
+    }
+  ]
+},
+  {
     "_component": "lottieInteractivity",
     "_classes": "",
     "_isOptional": false,
@@ -1955,7 +2119,7 @@
     "_disableAccessibilityState": false,
     "title": "Beta Components",
     "displayTitle": "Beta Components",
-    "body": "<p>These components are still in testing</p>",
+    "body": "<p>These components are still in testing/need fixing</p>",
     "_id": "62ea4680f2eb231c4766a0d3",
     "_parentId": "62ea4670f2eb231c4766a0d2",
     "_type": "component",
