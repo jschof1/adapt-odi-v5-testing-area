@@ -110,6 +110,7 @@ export default class fileInputView extends QuestionView {
       scrollX: true,
     });
   }
+
   async checkCsvStructure() {
     const csvResults = [];
     let result = await this.getFile()
@@ -297,7 +298,7 @@ export default class fileInputView extends QuestionView {
         csv_rows_columns_unique_max_columns_values.length <
         0.9
       ) {
-        csvResults.push(`Here are inconsistent values in the csv file.`);
+        csvResults.push(`There are inconsistent values in the csv file.`);
       }
     };
 
@@ -329,12 +330,12 @@ export default class fileInputView extends QuestionView {
     // console.log(result.contents)
     lineBreaks(result.contents)
     undeclaredHeader(result.contents)
-    // raggedRows(result.contents)
+    raggedRows(result.contents)
     singleCommaSeparated(result.contents)
     blankRows(result.contents)
     whiteSpace(result.contents)
     checkUTF8(result.contents)
-    // inconsistentValues(result.contents)
+    inconsistentValues(result.contents)
     emptyColumnName(result.contents)
     duplicateColumnName(result.contents)
 
@@ -351,7 +352,8 @@ export default class fileInputView extends QuestionView {
   //   return `<li>${result}</li>`
   // })} </ul>`);
 
-  async validateAjv(input) {
+  async validateAjv() {
+    let result = await this.getFile()
     function convertIntObj(input) {
       const res = {}
       for (const key in input) {
@@ -363,8 +365,10 @@ export default class fileInputView extends QuestionView {
       }
       return res;
     }
-    var result = convertIntObj(input);
-    var arrayResult = Object.values(result);
+    console.log(result)
+    var r = convertIntObj(result.parse.data);
+    var arrayResult = Object.values(r);
+    console.log(r)
     const ajv = new Ajv({ strict: false });
 
     // let schema =  ...this.model.get('_schema')
@@ -374,6 +378,8 @@ export default class fileInputView extends QuestionView {
     // var testSchemaValidator = ajv.compile(schema);
     for (let i = 0; i < arrayResult.length; i++) {
       let valid = ajv.validate(...this.model.get('_schema'), arrayResult[i]);
+      // let valid = testSchemaValidator(arrayResult[i]);
+      console.log(valid)
       if (!valid) {
         results.push(ajv.errors)
       }
@@ -381,7 +387,7 @@ export default class fileInputView extends QuestionView {
 
     // console.log(results)
 
-    // console.log(ajv.errors)
+    // console.log(results)
     let userAjvResults = []
 
     if (results.length == 0) {
@@ -392,7 +398,14 @@ export default class fileInputView extends QuestionView {
     //   userAjvResults.push(`Cannot find required property "${missingCol}".`)
     // }
     else {
-      userAjvResults.push(`the <strong> ${results[0][0]['instancePath'].slice(1,).toLowerCase()} </strong> an${results[0][0]['message']}`)
+     console.log(...results)
+     let getErrors = results.map((r) => {
+      return r[0]['instancePath'].slice(1,).toLowerCase() + " " + r[0]['message']
+        // r[0]['instancePath'].slice(1,).toLowerCase()
+        // r[0]['message']
+      })
+      console.log(...getErrors)
+      // userAjvResults.push(`the <strong> ${results[0][0]['instancePath'].slice(1,).toLowerCase()} </strong> an${results[0][0]['message']}`)
     }
     let userResult = userAjvResults
 
@@ -412,23 +425,28 @@ export default class fileInputView extends QuestionView {
     //   console.log(arrResults)
     // }
 
-    let csvErrors = csv.length
-    let ajvErrors = ajv.length
 
+
+    //set score in model
+  
     let combinedArr = ajv.concat(csv)
 
-    console.log(combinedArr)
+    //turn comibinedArr into a string
+    let combinedArrString = combinedArr.join(' <br />')
+    console.log(combinedArrString)
+
 
     this.model.get('_items')[0].feedback = combinedArr
-    this.model.get('_feedback').correct = combinedArr
-    this.model.get('_feedback')._incorrect.final = combinedArr
+    this.model.get('_items')[0]["_score"] = combinedArr.length
+    this.model.get('_feedback').correct = combinedArrString
+    // console.log(this.model.get('_items')[0]["_score"])
+    // this.model.get('_feedback')._incorrect.final = combinedArr
     this.model.get('_feedback')._partlyCorrect.final = combinedArr
-    combinedArr.map(() => {
-
-    })
-    return $('#feedback').html(`<ul> ${combinedArr.map((result) => {
+    const feedback = await $('#feedback').html(`<ul> ${combinedArr.map((result) => {
       return `<li>${result}</li>`
     }).join('')} </ul>`);
+
+    return feedback
   }
 
   // async removeButton() {
@@ -453,15 +471,9 @@ export default class fileInputView extends QuestionView {
     const index = $(e.currentTarget).data('adapt-index');
     const itemModel = this.model.getItem(index);
     let shouldSelect = !itemModel.get('_isActive');
-
-
     shouldSelect = true;
     this.model.resetActiveItems();
-
-    //add button which allows uers to refersh page to clear upload
-    // Select or deselect accordingly
     itemModel.toggleActive(shouldSelect);
-    // this.removeButton()
     this.createTable()
     this.feedback()
   }

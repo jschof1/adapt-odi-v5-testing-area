@@ -569,11 +569,11 @@
       }
     }
   },
-    {
-    "title": "beta-2",
+  {
+    "title": "New Article Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "color-four",
+    "_classes": "color-five",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -591,15 +591,15 @@
     },
     "_assessment": {
       "_isEnabled": true,
-      "_id": "1",
+      "_id": "file-input-test",
       "_attempts": -1,
       "_isPercentageBased": true,
       "_scoreToPass": 60,
       "_correctToPass": 60,
       "_includeInTotalScore": true,
       "_assessmentWeight": 1,
-      "_suppressMarking": true,
-      "_isResetOnRevisit": true,
+      "_suppressMarking": false,
+      "_isResetOnRevisit": false,
       "_allowResetIfPassed": true,
       "_scrollToOnReset": false,
       "_randomisation": {
@@ -615,15 +615,27 @@
         "_resetType": "hard",
         "_canShowFeedback": true,
         "_canShowMarking": true,
-        "_canShowModelAnswer": false
+        "_canShowModelAnswer": true
       }
-  }
-},
+    },
+    "_odi-generic": {
+      "_backgroundImage": {
+        "_large": "",
+        "_medium": "",
+        "_small": ""
+      },
+      "_backgroundStyles": {
+        "_backgroundRepeat": null,
+        "_backgroundSize": null,
+        "_backgroundPosition": null
+      }
+    }
+  },
   {
-    "title": "Results from File Input",
+    "title": "New Article Title",
     "displayTitle": "",
     "body": "",
-    "_classes": "invert-even color-four",
+    "_classes": "color-six",
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -633,7 +645,36 @@
     "_ariaLevel": 0,
     "_id": "FileInputArticleResults",
     "_parentId": "62de8ad02bdedd05ba88d17d",
-    "_type": "article"
+    "_type": "article",
+    "_assessment": {
+      "_isEnabled": false,
+      "_id": "",
+      "_attempts": -1,
+      "_isPercentageBased": true,
+      "_scoreToPass": 60,
+      "_correctToPass": 60,
+      "_includeInTotalScore": true,
+      "_assessmentWeight": 1,
+      "_suppressMarking": false,
+      "_isResetOnRevisit": false,
+      "_allowResetIfPassed": false,
+      "_scrollToOnReset": false,
+      "_randomisation": {
+        "_isEnabled": false,
+        "_blockCount": -1
+      },
+      "_banks": {
+        "_isEnabled": false,
+        "_split": "",
+        "_randomisation": false
+      },
+      "_questions": {
+        "_resetType": "hard",
+        "_canShowFeedback": false,
+        "_canShowMarking": false,
+        "_canShowModelAnswer": false
+      }
+    }
   },
   {
     "title": "a-20",

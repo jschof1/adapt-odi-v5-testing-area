@@ -1123,11 +1123,11 @@
     }
   },
   {
-    "title": "ODI File Input Test",
-    "displayTitle": "ODI File Input Test",
+    "title": "New Block Title",
+    "displayTitle": "",
     "body": "",
-    "classes": "color-one",
-    "_trackingId": 57,
+    "_classes": "",
+    "_trackingId": 58,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -1143,11 +1143,11 @@
     }
   },
   {
-    "title": "",
+    "title": "New Block Title",
     "displayTitle": "",
     "body": "",
-    "classes": "color-five",
-    "_trackingId": 50,
+    "_classes": "",
+    "_trackingId": 59,
     "instruction": "",
     "_isOptional": false,
     "_isAvailable": true,
@@ -1157,7 +1157,15 @@
     "_ariaLevel": 0,
     "_id": "resultsFileBeta",
     "_parentId": "FileInputArticleResults",
-    "_type": "block"
+    "_type": "block",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_assessment": {
+      "_quizBankID": 1
+    }
   },
   {
     "title": "b-25",
