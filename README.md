@@ -10,7 +10,7 @@ Below includes a version tracker table which keeps a track of all the *stable* c
 
 ||||||
 |--- |--- |--- |--- |--- |
-|Thing|D Version|J Version|Link (if applicable)|Comments|
+|Component/Extension|D Version|J Version|Link (if applicable)|Comments|
 |Adapt Framework|5.18.1|5.18.0|https://github.com/adaptlearning/adapt_framework||
 |Authoring tool|0.10.5|0.10.5|https://github.com/adaptlearning/adapt_authoring||
 |Article block slider|3.1.1|3.4.0|||
