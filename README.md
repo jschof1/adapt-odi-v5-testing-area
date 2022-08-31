@@ -23,7 +23,7 @@ Below includes a version tracker table which keeps a track of all the *stable* c
 |Page level progress|5.3.1|1.9.4|https://github.com/adaptlearning/adapt-contrib-pageLevelProgress||
 |Resources|4.2.0|4.2.0|https://github.com/adaptlearning/adapt-contrib-resources||
 |Simple about page (in tutor)|0.5.2|0.5.2|https://github.com/theodi/adapt-contrib-aboutPage||
-|Spoor|3.10.1|4.2.0|https://github.com/adaptlearning/adapt-contrib-trickle||
+|Spoor|3.10.1|3.10.0|https://github.com/adaptlearning/adapt-contrib-trickle||
 |Trickle|5.2.3|5.2.6|https://github.com/adaptlearning/adapt-contrib-trickle||
 |Tutor|4.0.0|4.0.0|https://github.com/adaptlearning/adapt-contrib-tutor||
 |Vanilla theme||5.7.0|https://github.com/adaptlearning/adapt-contrib-vanilla/releases/tag/v5.7.0||
