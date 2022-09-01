@@ -1,5 +1,4 @@
 import QuestionView from 'core/js/views/questionView';
-// import ZingGrid from './zinggrid.min.js'
 import Papa from './csvToJson';
 import Ajv from './ajv7.min.js';
 import DataTable from 'libraries/jquery.dataTables.min';
@@ -111,19 +110,231 @@ export default class fileInputView extends QuestionView {
     });
   }
 
+  // Is it encoded correctly as a CSV. Not much a human can do about this.
+//   async properEncodings() {
+//     // Invalid encoding: check if there are any odd characters in a file which could cause encoding Errors
+//     let result = await this.getFile()
+//     let splitLines = result.contents.split('\n');
+//   // look for odd charachters in csv file that cannot be encoded as UTF-8
+//     const invalidEncoding = (csv) => {
+//       let invalid = false;
+//       for(let i of csv){
+//         if (csv.charCodeAt(i) > 127) {
+//           invalid = true;
+//         }
+//       }
+//       return invalid;
+//     }
+
+//   // Line breaks: if line breaks are not the same throughout the file
+//   const lineBreaks = (csv) => {
+//       let lineBreaks = [];
+//       for (let i = 0; i < lineBreaks.length - 1; i++) {
+//         lineBreaks.push(csvLines[i].split('\r').length - 1);
+//       }
+//       let lineBreaksUnique = lineBreaks.filter((item, pos) =>  lineBreaks.indexOf(item) == pos);
+//       return lineBreaksUnique.length > 1 ? csvResults.push('Line breaks are not the same throughout the csv file.') : null
+//   }
+
+//   // Whitespace: if there is any whitespace between commas and double quotes around fields in a csv file
+//   const whitespace = (csv) => {
+//     let csvRows = [];
+//     for (let i = 1; i < csv.length - 1; i++) {
+//       csvRows.push(csv_lines[i].split(','));
+//     }
+//     let csvRowsWhitespace = [];
+//     for (let i = 0; i < csvRows.length - 1; i++) {
+//       for (let j = 0; j < csvRows[i].length; j++) {
+//         if (csvRows[i][j].split('"').length % 2 != 0) {
+//           if (csvRows[i][j].split('"').length > 2) {
+//             if (csvRows[i][j].split('"')[1].split(' ').length > 1) {
+//               csvRowsWhitespace.push(i);
+//             }
+//           }
+//         }
+//       }
+//     }
+//     if (csvRowsWhitespace.length > 0) {
+//       csvResults.push(
+//         'There is whitespace between commas and double quotes around fields in csv.',
+//         `whitespace: ${csvRowsWhitespace}`
+//       );
+//     }
+//   }
+
+//   // // Encoding: if you don't use UTF-8 as the encoding for the file
+//   // const encoding = (contents) => {
+//   //   let encoding = contents.match(/encoding=['"](.*?)['"]/g)
+//   //   if (encoding) {
+//   //     return true
+//   //   }
+//   //   return false
+//   // }
+
+//   // No content type: if you don't provide a Content-Type HTTP header in your csv file
+
+
+//   // No encoding: if you don't specify an encoding with a charset parameter in your csv
+//   const noEncoding = (contents) => {
+//     // let encoding = contents.match(/charset=['"](.*?)['"]/g)
+    
+//   }
+
+//   // Excel: if it looks like you're serving an Excel file rather than CSV (because the suffix for the file is .xls and there is no 'Content-Type' header)
+//   // const excel = (contents) => {
+//   //   // check actual file name extension (e.g. .xls)
+//   // }
+//   // loop through each line in csv file and check functions to see if there are any errors
+//   // const checkEncodingErrors = (csv) => {
+//   //   // console.log(result.contents)
+//   //   for (var i = 0; i < csvLines.length; i++) {
+//   //     let line = csvLines[i];
+//   //     console.log(line)
+//   //     if (invalidEncoding(line) || lineBreaks(line)|| whitespace(line)|| encoding(line)|| noContentType(line)|| noEncoding(line)|| excel(line) ) {
+//   //       console.log('improper encoding')
+//   //     }
+//   //   }
+//   // }
+
+//   return checkEncodingErrors(result.contents)
+// }
+  // CSV encoding but not CSV inside
+
+  async csvParser() {
+    let result = await this.getFile()
+    let splitLines = result.contents.split('\n');
+    let lines = [];
+    let rows = []
+    for (let i = 1; i < splitLines.length - 1; i++) {
+      lines.push(splitLines[i]);
+    }
+    for (let i = 0; i < lines.length - 1; i++) {
+      rows.push(lines[i].split(','));
+    }
+    let rowColumns = [];
+    for (let i = 0; i < rows.length - 1; i++) {
+      rowColumns.push(rows[i].length);
+    }
+    let uniqueRowColumns = rowColumns.filter(function (item, pos) {
+      return rowColumns.indexOf(item) == pos;
+    });
+    const obj = { lines, rows, rowColumns, uniqueRowColumns };
+    return obj
+  }
+async singleCommaSeparated() {
+  console.log(await this.csvParser())
+  if (this.csvParser().uniqueRowColumns.length == 1 && uniqueRowColumns[0] == 1) {
+      return 'The CSV file only contains a single comma-separated column.'
+  }
+}
+  async headerRow() {
+    let result = await this.getFile()
+    let splitLines = result.contents.split('\n');
+    let lines = [];
+    for (let i = 1; i < splitLines.length - 1; i++) {
+      lines.push(splitLines[i]);
+    }
+    let rows = [];
+    for (let i = 0; i < csvLines.length - 1; i++) {
+      rows.push(csvLines[i].split(','));
+    }
+    let headers = lines[0].split(',');
+    if (headers.length == 1) {
+      return 'The csv headers have not been declared.', `the headers are: ${headers}`
+    }
+  }
+
+  // Column validation
+  async columnValidation() {
+    let result = await this.getFile()
+    let splitLines = result.contents.split('\n');
+    let lines = [];
+    let headers = lines[0].split(',');
+
+
+    const emptyColumnName = (headers) => {
+      let csv_headers_blank = [];
+      for (let i = 0; i < csv_headers.length; i++) {
+        if (headers[i] == '') {
+          csv_headers_blank.push(i);
+        }
+      }
+      if (csv_headers_blank.length > 0) {
+        csvResults.push("There are columns that don't have a name in the csv file.");
+      }
+    }
+
+    // Duplicate column name: if all the column names aren't unique
+    // const duplicateColumnName = (headers) => {
+    //   let headers = csv[0].split(',');
+    //   let headers_unique = headers.filter(function (item, pos) {
+    //     return headers.indexOf(item) == pos;
+    //   });
+    //   if (headers_unique.length != headers.length) {
+    //     csvResults.push('Not all the columns are unique.', `see here: ${csv_headers_unique}`)
+    //   }
+    // };
+  }
+
+
+  // Row validation
+  async rowValidation() {
+    let result = await this.getFile()
+    let splitLines = result.contents.split('\n');
+    let lines = [];
+
+    const raggedRows = (lines) => {
+    for (let i = 1; i < lines.length - 1; i++) {
+      csvRows.push(lines[i].split(','));
+    }
+    let rowsColumns = [];
+    for (let i = 0; i < csvRows.length - 1; i++) {
+      rowsColumns.push(csvRows[i].length);
+    }
+    let csvRows_columns_unique = csvRows_columns.filter(function (item, pos) {
+      return csvRows_columns.indexOf(item) == pos;
+    });
+    if (csvRows_columns_unique.length > 1) {
+      // csvResults.push(csvRows_columns_unique[0])
+      // csvResults.push(csvRows_columns_unique)
+      // const displayColumns = num => csvRows_columns[csvRows_columns_unique[num]]
+      return "Every row in the file doesn't have the same number of columns." + `here are the column counts we have found: ${[...csvRows_columns_unique]}`
+    }
+  };
+
+  // Blank rows: if there are any blank rows
+  const blankRows = (csv) => {
+    let csvRows = [];
+    for (let i = 1; i < lines.length - 1; i++) {
+      csvRows.push(lines[i].split(','));
+    }
+    let csvRows_blank = [];
+    for (let i = 0; i < csvRows.length - 1; i++) {
+      if (csvRows[i].length == 1 && csvRows[i][0] == '') {
+        csvRows_blank.push(i);
+      }
+    }
+    if (csvRows_blank.length > 0) {
+      csvResults.push('There are blank rows in the csv.', `see here: ${csvRows_blank} / ${csvRows.length - 1}`);
+    }
+  };
+}
+
+
+
   async checkCsvStructure() {
     const csvResults = [];
     let result = await this.getFile()
     const lineBreaks = (csv) => {
-      let csv_lines = csv.split('\n');
-      let csv_line_breaks = [];
-      for (let i = 0; i < csv_lines.length - 1; i++) {
-        csv_line_breaks.push(csv_lines[i].split('\r').length - 1);
+      console.log(csv)
+      let csvLineBreaks = [];
+      for (let i = 0; i < lines.length - 1; i++) {
+        csvLineBreaks.push(lines[i].split('\r').length - 1);
       }
-      let csv_line_breaks_unique = csv_line_breaks.filter(function (item, pos) {
-        return csv_line_breaks.indexOf(item) == pos;
+      let csvLineBreaks_unique = csvLineBreaks.filter(function (item, pos) {
+        return csvLineBreaks.indexOf(item) == pos;
       });
-      if (csv_line_breaks_unique.length > 1) {
+      if (csvLineBreaks_unique.length > 1) {
         csvResults.push('Line breaks are not the same throughout the csv file.');
       }
     };
@@ -141,25 +352,25 @@ export default class fileInputView extends QuestionView {
     const raggedRows = (csv) => {
       let csv_lines = csv.split('\n');
       let csv_headers = csv_lines[0].split(',');
-      let csv_rows = []
-      // csvResults.push(csv_rows)
+      let csvRows = []
+      // csvResults.push(csvRows)
       for (let i = 1; i < csv_lines.length - 1; i++) {
-        csv_rows.push(csv_lines[i].split(','));
+        csvRows.push(csv_lines[i].split(','));
       }
-      let csv_rows_columns = [];
-      for (let i = 0; i < csv_rows.length - 1; i++) {
-        csv_rows_columns.push(csv_rows[i].length);
+      let csvRows_columns = [];
+      for (let i = 0; i < csvRows.length - 1; i++) {
+        csvRows_columns.push(csvRows[i].length);
       }
-      let csv_rows_columns_unique = csv_rows_columns.filter(function (item, pos) {
-        return csv_rows_columns.indexOf(item) == pos;
+      let csvRows_columns_unique = csvRows_columns.filter(function (item, pos) {
+        return csvRows_columns.indexOf(item) == pos;
       });
-      if (csv_rows_columns_unique.length > 1) {
-        // csvResults.push(csv_rows_columns_unique[0])
-        // csvResults.push(csv_rows_columns_unique)
-        // const displayColumns = num => csv_rows_columns[csv_rows_columns_unique[num]]
+      if (csvRows_columns_unique.length > 1) {
+        // csvResults.push(csvRows_columns_unique[0])
+        // csvResults.push(csvRows_columns_unique)
+        // const displayColumns = num => csvRows_columns[csvRows_columns_unique[num]]
         csvResults.push(
           "Every row in the file doesn't have the same number of columns.",
-          `here are the column counts we have found: ${[...csv_rows_columns_unique]}`
+          `here are the column counts we have found: ${[...csvRows_columns_unique]}`
         );
       }
     };
@@ -167,44 +378,44 @@ export default class fileInputView extends QuestionView {
     // Blank rows: if there are any blank rows
     const blankRows = (csv) => {
       let csv_lines = csv.split('\n');
-      let csv_rows = [];
+      let csvRows = [];
       for (let i = 1; i < csv_lines.length - 1; i++) {
-        csv_rows.push(csv_lines[i].split(','));
+        csvRows.push(csv_lines[i].split(','));
       }
-      let csv_rows_blank = [];
-      for (let i = 0; i < csv_rows.length - 1; i++) {
-        if (csv_rows[i].length == 1 && csv_rows[i][0] == '') {
-          csv_rows_blank.push(i);
+      let csvRows_blank = [];
+      for (let i = 0; i < csvRows.length - 1; i++) {
+        if (csvRows[i].length == 1 && csvRows[i][0] == '') {
+          csvRows_blank.push(i);
         }
       }
-      if (csv_rows_blank.length > 0) {
-        csvResults.push('There are blank rows in the csv.', `see here: ${csv_rows_blank} / ${csv_rows.length - 1}`);
+      if (csvRows_blank.length > 0) {
+        csvResults.push('There are blank rows in the csv.', `see here: ${csvRows_blank} / ${csvRows.length - 1}`);
       }
     };
 
     // Whitespace: if there is any whitespace between commas and double quotes around fields
     const whiteSpace = (csv) => {
       let csv_lines = csv.split('\n');
-      let csv_rows = [];
+      let csvRows = [];
       for (let i = 1; i < csv_lines.length - 1; i++) {
-        csv_rows.push(csv_lines[i].split(','));
+        csvRows.push(csv_lines[i].split(','));
       }
-      let csv_rows_whitespace = [];
-      for (let i = 0; i < csv_rows.length - 1; i++) {
-        for (let j = 0; j < csv_rows[i].length; j++) {
-          if (csv_rows[i][j].split('"').length % 2 != 0) {
-            if (csv_rows[i][j].split('"').length > 2) {
-              if (csv_rows[i][j].split('"')[1].split(' ').length > 1) {
-                csv_rows_whitespace.push(i);
+      let csvRows_whitespace = [];
+      for (let i = 0; i < csvRows.length - 1; i++) {
+        for (let j = 0; j < csvRows[i].length; j++) {
+          if (csvRows[i][j].split('"').length % 2 != 0) {
+            if (csvRows[i][j].split('"').length > 2) {
+              if (csvRows[i][j].split('"')[1].split(' ').length > 1) {
+                csvRows_whitespace.push(i);
               }
             }
           }
         }
       }
-      if (csv_rows_whitespace.length > 0) {
+      if (csvRows_whitespace.length > 0) {
         csvResults.push(
           'There is whitespace between commas and double quotes around fields in csv.',
-          `whitespace: ${csv_rows_whitespace}`
+          `whitespace: ${csvRows_whitespace}`
         );
       }
     };
@@ -235,18 +446,18 @@ export default class fileInputView extends QuestionView {
     // Check options: if the CSV file only contains a single comma-separated column; this usually means you're using a separator other than a comm
     const singleCommaSeparated = csv => {
       let csv_lines = csv.split('\n');
-      let csv_rows = [];
+      let csvRows = [];
       for (let i = 1; i < csv_lines.length - 1; i++) {
-        csv_rows.push(csv_lines[i].split(','));
+        csvRows.push(csv_lines[i].split(','));
       }
-      let csv_rows_columns = [];
-      for (let i = 0; i < csv_rows.length - 1; i++) {
-        csv_rows_columns.push(csv_rows[i].length);
+      let csvRows_columns = [];
+      for (let i = 0; i < csvRows.length - 1; i++) {
+        csvRows_columns.push(csvRows[i].length);
       }
-      let csv_rows_columns_unique = csv_rows_columns.filter(function (item, pos) {
-        return csv_rows_columns.indexOf(item) == pos;
+      let csvRows_columns_unique = csvRows_columns.filter(function (item, pos) {
+        return csvRows_columns.indexOf(item) == pos;
       });
-      if (csv_rows_columns_unique.length == 1 && csv_rows_columns_unique[0] == 1) {
+      if (csvRows_columns_unique.length == 1 && csvRows_columns_unique[0] == 1) {
         csvResults.push(
           'The CSV file only contains a single comma-separated column.',
         );
@@ -259,43 +470,43 @@ export default class fileInputView extends QuestionView {
     }
     const inconsistentValues = (csv) => {
       let csv_lines = csv.split('\n');
-      let csv_rows = [];
+      let csvRows = [];
       for (let i = 1; i < csv_lines.length - 1; i++) {
-        csv_rows.push(csv_lines[i].split(','));
+        csvRows.push(csv_lines[i].split(','));
       }
-      let csv_rows_columns = [];
-      for (let i = 0; i < csv_rows.length - 1; i++) {
-        csv_rows_columns.push(csv_rows[i].length);
+      let csvRows_columns = [];
+      for (let i = 0; i < csvRows.length - 1; i++) {
+        csvRows_columns.push(csvRows[i].length);
       }
-      let csv_rows_columns_unique = csv_rows_columns.filter(function (item, pos) {
-        return csv_rows_columns.indexOf(item) == pos;
+      let csvRows_columns_unique = csvRows_columns.filter(function (item, pos) {
+        return csvRows_columns.indexOf(item) == pos;
       });
-      let csv_rows_columns_unique_max = Math.max.apply(
+      let csvRows_columns_unique_max = Math.max.apply(
         Math,
-        csv_rows_columns_unique
+        csvRows_columns_unique
       );
-      let csv_rows_columns_unique_max_index = csv_rows_columns_unique.indexOf(
-        csv_rows_columns_unique_max
+      let csvRows_columns_unique_max_index = csvRows_columns_unique.indexOf(
+        csvRows_columns_unique_max
       );
-      let csv_rows_columns_unique_max_columns =
-        csv_rows_columns_unique[csv_rows_columns_unique_max_index];
-      let csv_rows_columns_unique_max_columns_values = [];
-      for (let i = 0; i < csv_rows.length - 1; i++) {
-        csv_rows_columns_unique_max_columns_values.push(
-          csv_rows[i][csv_rows_columns_unique_max_columns]
+      let csvRows_columns_unique_max_columns =
+        csvRows_columns_unique[csvRows_columns_unique_max_index];
+      let csvRows_columns_unique_max_columns_values = [];
+      for (let i = 0; i < csvRows.length - 1; i++) {
+        csvRows_columns_unique_max_columns_values.push(
+          csvRows[i][csvRows_columns_unique_max_columns]
         );
       }
-      let csv_rows_columns_unique_max_columns_values_numeric = [];
-      for (let i = 0; i < csv_rows_columns_unique_max_columns_values.length; i++) {
-        if (!isNaN(csv_rows_columns_unique_max_columns_values[i])) {
-          csv_rows_columns_unique_max_columns_values_numeric.push(
-            csv_rows_columns_unique_max_columns_values[i]
+      let csvRows_columns_unique_max_columns_values_numeric = [];
+      for (let i = 0; i < csvRows_columns_unique_max_columns_values.length; i++) {
+        if (!isNaN(csvRows_columns_unique_max_columns_values[i])) {
+          csvRows_columns_unique_max_columns_values_numeric.push(
+            csvRows_columns_unique_max_columns_values[i]
           );
         }
       }
       if (
-        csv_rows_columns_unique_max_columns_values_numeric.length /
-        csv_rows_columns_unique_max_columns_values.length <
+        csvRows_columns_unique_max_columns_values_numeric.length /
+        csvRows_columns_unique_max_columns_values.length <
         0.9
       ) {
         csvResults.push(`There are inconsistent values in the csv file.`);
@@ -348,6 +559,9 @@ export default class fileInputView extends QuestionView {
 
   }
 
+  // async checkCsvStructure() {
+  //  return this.properEncodings()
+  // }
   // return $('#feedbackCsv').html(`<ul> ${csvResults.map((result) => {
   //   return `<li>${result}</li>`
   // })} </ul>`);
@@ -365,50 +579,55 @@ export default class fileInputView extends QuestionView {
       }
       return res;
     }
-    console.log(result)
+
     var r = convertIntObj(result.parse.data);
     var arrayResult = Object.values(r);
-    console.log(r)
-    const ajv = new Ajv({ strict: false });
+    // console.log(arrayResult)
+    const ajv = new Ajv({
+      allErrors: true,
+      strict: false,
+      validateFormats: 'full',
+    });
+    let _schema =  this.model.get('_schema')
+    ajv.addFormat('float', /^\$(\d{1,3}(\,\d{3})*|(\d+))(\.\d{2})?$/);
 
-    // let schema =  ...this.model.get('_schema')
-
-
-    let results = []
-    // var testSchemaValidator = ajv.compile(schema);
+    let errorList = [];
+    // var testSchemaValidator = ajv.compile(_schema);
     for (let i = 0; i < arrayResult.length; i++) {
-      let valid = ajv.validate(...this.model.get('_schema'), arrayResult[i]);
+      let valid = ajv.validate(_schema, arrayResult[i]);
+      console.log(valid);
       // let valid = testSchemaValidator(arrayResult[i]);
-      console.log(valid)
+      // console.log(valid);
       if (!valid) {
-        results.push(ajv.errors)
+        errorList.push(ajv.errors);
       }
     }
 
-    // console.log(results)
+    let errText = [];
+    errorList.map((a) => {
+      a.map((b) => {
+        // console.log(b.instancePath.slice(1))
+        let colName = b['instancePath'].slice(1);
+        let colType = b['keyword'];
+        //delete words 'must have required' from message object
+       let problem = b['message']
+        if (colType === 'type' || 'format') {
+          var errMsg = `"${colName}" ${colType} ${problem}.`;
+          errText.push(errMsg);
+        } else if (b['params']['error'] === 'missing') {
+          let missingCol = b['params']['missingProperty'];
+          var errMsg = `Cannot find required property "${missingCol}".`;
+          errText.push(errMsg);
+        } else if (colType === 'enum') {
+          let allowed = b['params']['allowedValues'];
+          let missingCol = b['params']['missingProperty'];
+          var errMsg = `"<strong> ${colName} </strong>" must be one of ${allowed}.`;
+          errText.push(errMsg);
+        }
+      });
+    });
 
-    // console.log(results)
-    let userAjvResults = []
-
-    if (results.length == 0) {
-      userAjvResults.push('<a href="https://ajv.js.org/">Ajv Validator</a> found no errors')
-    }
-    // else if (ajv.errors[0][0]["params"]["error"] === "missing") {
-    //   let missingCol = ajv.errors[0]["params"]["missingProperty"];
-    //   userAjvResults.push(`Cannot find required property "${missingCol}".`)
-    // }
-    else {
-     console.log(...results)
-     let getErrors = results.map((r) => {
-      return r[0]['instancePath'].slice(1,).toLowerCase() + " " + r[0]['message']
-        // r[0]['instancePath'].slice(1,).toLowerCase()
-        // r[0]['message']
-      })
-      console.log(...getErrors)
-      // userAjvResults.push(`the <strong> ${results[0][0]['instancePath'].slice(1,).toLowerCase()} </strong> an${results[0][0]['message']}`)
-    }
-    let userResult = userAjvResults
-
+    const userResult = [...new Set(errText)];
 
     return userResult
     // return $('#feedbackAjv').html(`<ul> ${userResult.map((result) => {
@@ -416,25 +635,14 @@ export default class fileInputView extends QuestionView {
     // })} </ul>`);
 
   }
+//  async checkCsvStructure(){
+//   this.singleCommaSeparated()
+//  }
   async feedback() {
     let ajv = await this.validateAjv()
     let csv = await this.checkCsvStructure()
-    // console.log(userResult)
-    // for (let i of userResult.userResults) {
-    //   arrResults = `${Object.values(i)}`
-    //   console.log(arrResults)
-    // }
-
-
-
-    //set score in model
-  
     let combinedArr = ajv.concat(csv)
-
-    //turn comibinedArr into a string
     let combinedArrString = combinedArr.join(' <br />')
-    console.log(combinedArrString)
-
 
     this.model.get('_items')[0].feedback = combinedArr
     this.model.get('_items')[0]["_score"] = combinedArr.length
@@ -442,32 +650,15 @@ export default class fileInputView extends QuestionView {
     // console.log(this.model.get('_items')[0]["_score"])
     // this.model.get('_feedback')._incorrect.final = combinedArr
     this.model.get('_feedback')._partlyCorrect.final = combinedArr
-    const feedback = await $('#feedback').html(`<ul> ${combinedArr.map((result) => {
+    const feedback = await $('#feedback').html(`<h1> Errors </h1> <ul> ${combinedArr.map((result) => {
       return `<li>${result}</li>`
     }).join('')} </ul>`);
 
     return feedback
   }
 
-  // async removeButton() {
-  //   const tableContents = $("#example-wrapper")
-  //   const $itemInput = this.$('.js-item-input').eq(0)
-  //   // console.log($itemInput)
-  //   /* create button that removes uploaded file so that the user can reupload */
-  //   var clearUploadButton = document.createElement('button');
-  //   clearUploadButton.innerHTML = 'Clear Upload';
-  //   clearUploadButton.onclick = function() {
-  //     $itemInput.val('');
-  //     tableContents.html('');
-  //     $itemInput.trigger('change');
-
-  //   };
-  //   document.body.appendChild(clearUploadButton);
-  //   }
 
   async onInputChanged(e) {
-
-
     const index = $(e.currentTarget).data('adapt-index');
     const itemModel = this.model.getItem(index);
     let shouldSelect = !itemModel.get('_isActive');
@@ -476,6 +667,7 @@ export default class fileInputView extends QuestionView {
     itemModel.toggleActive(shouldSelect);
     this.createTable()
     this.feedback()
+    // this.properEncodings()
   }
 }
 
