@@ -11,7 +11,7 @@
     "_disableAccessibilityState": false,
     "title": "Introduction",
     "displayTitle": "",
-    "body": "Adapt allows you to combine <b>Text</b> and <b>Graphic</b> components on the scrolling page to create rich and varied learning experiences. In addition, a wide range of interactive components are also available to help encourage deeper engagement with the material.<br><br><b>These presentation components can be structured</b> in any way to help you create learning experiences that meet the needs of your learners.<br><br>In addition, if your course is being launched from an <abbr title='Learning Management System'>LMS</abbr> or <abbr title='Learning Record Store'>LRS</abbr>, you can personalise the course content by having the learner's name dynamically displayed in the body, instruction or feedback text.",
+    "body": "Adapt allows you to combine <b>Text</b> and <b>Graphic</b> components on the scrolling page to create rich and varied learning experiences. In addition, a wide range of interactive components are also available to help encourage deeper engagement with the material.<br><br><b>These presentation components can be structured</b> in any way to help you create learning experiences that meet the needs of your learners.<br><br>In addition, if your course is being launched from an <abbr title=Learning Management System>LMS</abbr> or <abbr title=Learning Record Store>LRS</abbr>, you can personalise the course content by having the learners name dynamically displayed in the body, instruction or feedback text.",
     "_id": "62de7c769ce2b43d9ea45322",
     "_parentId": "62de7c769ce2b43d9ea4530e",
     "_type": "component",
@@ -400,9 +400,9 @@
     ],
     "_feedback": {
       "title": "Feedback",
-      "correct": "Correct feedback text.<br><br>That’s correct. The first large assessment to consist solely of the multiple choice question type was the Army Alpha test, used from <strong>1917</strong> to evaluate U.S. military recruits in the First World War.<br><br>Source: <a href='http://en.wikipedia.org/wiki/Multiple_choice' target='_blank'>Wikipedia</a><br><br><i>Component facts: <b>Multiple Choice Questions (or MCQs)</b> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</i>",
+      "correct": "Correct feedback text.<br><br>That’s correct. The first large assessment to consist solely of the multiple choice question type was the Army Alpha test, used from <strong>1917</strong> to evaluate U.S. military recruits in the First World War.<br><br>Source: <a href=http://en.wikipedia.org/wiki/Multiple_choice target=_blank>Wikipedia</a><br><br><i>Component facts: <b>Multiple Choice Questions (or MCQs)</b> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</i>",
       "_incorrect": {
-        "final": "Incorrect feedback text.<br><br>That’s not right. The first large assessment to consist solely of the multiple choice question type was the Army Alpha test, used from <strong>1917</strong> to evaluate U.S. military recruits in the First World War.<br><br>Source: <a href='http://en.wikipedia.org/wiki/Multiple_choice' target='_blank'>Wikipedia</a><br><br><i>Component facts: <b>Multiple Choice Questions (or MCQs)</b> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</i>"
+        "final": "Incorrect feedback text.<br><br>That’s not right. The first large assessment to consist solely of the multiple choice question type was the Army Alpha test, used from <strong>1917</strong> to evaluate U.S. military recruits in the First World War.<br><br>Source: <a href=http://en.wikipedia.org/wiki/Multiple_choice target=_blank>Wikipedia</a><br><br><i>Component facts: <b>Multiple Choice Questions (or MCQs)</b> are a tried and tested method for presenting learners with a simple text-based question. Component is either single or spanned.</i>"
       }
     }
   },
@@ -442,7 +442,7 @@
     "_disableAccessibilityState": false,
     "title": "Graphical Multiple Choice Question",
     "displayTitle": "Graphical Multiple Choice Question",
-    "body": "The <b>Graphical Multiple Choice Question</b> is an alternative to the standard <abbr title='Multiple Choice Question'>MCQ</abbr>, and allows you to ask a question and present the options as graphics (with accompanying captions). This component is always spanned.",
+    "body": "The <b>Graphical Multiple Choice Question</b> is an alternative to the standard <abbr title=Multiple Choice Question>MCQ</abbr>, and allows you to ask a question and present the options as graphics (with accompanying captions). This component is always spanned.",
     "_id": "62de7c779ce2b43d9ea4533e",
     "_parentId": "62de7c769ce2b43d9ea45316",
     "_type": "component",
@@ -539,12 +539,12 @@
     ],
     "_feedback": {
       "title": "Feedback",
-      "correct": "Correct answer feedback.<br><br>That’s correct. The Adapt open source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href='https://www.adaptlearning.org/index.php/collaborators/' target='_blank'>official collaborators</a>.<br><br><i>Component facts: <b>Text input</b> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</i>",
+      "correct": "Correct answer feedback.<br><br>That’s correct. The Adapt open source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href=https://www.adaptlearning.org/index.php/collaborators/ target=_blank>official collaborators</a>.<br><br><i>Component facts: <b>Text input</b> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</i>",
       "_partlyCorrect": {
-        "final": "Partially correct answer feedback.<br><br>That’s partially correct. The Adapt open source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href='https://www.adaptlearning.org/index.php/collaborators/' target='_blank'>official collaborators</a>.<br><br><i>Component facts: <b>Text input</b> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</i>"
+        "final": "Partially correct answer feedback.<br><br>That’s partially correct. The Adapt open source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href=https://www.adaptlearning.org/index.php/collaborators/ target=_blank>official collaborators</a>.<br><br><i>Component facts: <b>Text input</b> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</i>"
       },
       "_incorrect": {
-        "final": "Incorrect answer feedback.<br><br>Sorry, that’s not right. The Adapt open source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href='https://www.adaptlearning.org/index.php/collaborators/' target='_blank'>official collaborators</a>.<br><br><i>Component facts: <b>Text input</b> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</i>"
+        "final": "Incorrect answer feedback.<br><br>Sorry, that’s not right. The Adapt open source project was established by Kineo, Learning Pool and Sponge. At the time of writing, there are a total of nine <a href=https://www.adaptlearning.org/index.php/collaborators/ target=_blank>official collaborators</a>.<br><br><i>Component facts: <b>Text input</b> components let learners enter their own answers, which is great for questions that require a bit more flexibility, like those with answers that could be written as both full words and numbers.</i>"
       }
     }
   },
@@ -623,7 +623,7 @@
         ]
       },
       {
-        "text": "Adapt adheres to level 'AA' of the <abbr title='Web Content Accessibility Guidelines'>WCAG</abbr> version 2, but when were these published?",
+        "text": "Adapt adheres to level AA of the <abbr title=Web Content Accessibility Guidelines>WCAG</abbr> version 2, but when were these published?",
         "_options": [
           {
             "text": "2008",
@@ -715,9 +715,9 @@
     },
     "_feedback": {
       "title": "Feedback",
-      "correct": "Correct answer feedback.<br><br>Yes, that’s right. According to Miller’s paper 7 +/- 2 chunks of information was the limited capacity of working memory. Various theories from the field of cognitive psychology such as Miller’s <a href='http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two' target='_blank'>magical number</a>, <a href='http://en.wikipedia.org/wiki/Chunking_%28psychology%29#Chunking_as_the_learning_of_long-term_memory_structures' target='_blank'>chunking</a>, <a href='http://en.wikipedia.org/wiki/Forgetting_curve' target='_blank'>the forgetting curve</a> and <a href='http://en.wikipedia.org/wiki/Spaced_repetition' target='_blank'>spaced repetition</a> have all influenced learning theory over the last 50 years or so.<br><br><i>Component facts: The correct answer for a <b>Slider</b> component can be an exact number or a range. In this instance we have set the correct answer to a range of 5-9 due to the correct answer being seven plus or minus two. Component is either single or spanned.</i>",
+      "correct": "Correct answer feedback.<br><br>Yes, that’s right. According to Miller’s paper 7 +/- 2 chunks of information was the limited capacity of working memory. Various theories from the field of cognitive psychology such as Miller’s <a href=http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two target=_blank>magical number</a>, <a href=http://en.wikipedia.org/wiki/Chunking_%28psychology%29#Chunking_as_the_learning_of_long-term_memory_structures target=_blank>chunking</a>, <a href=http://en.wikipedia.org/wiki/Forgetting_curve target=_blank>the forgetting curve</a> and <a href=http://en.wikipedia.org/wiki/Spaced_repetition target=_blank>spaced repetition</a> have all influenced learning theory over the last 50 years or so.<br><br><i>Component facts: The correct answer for a <b>Slider</b> component can be an exact number or a range. In this instance we have set the correct answer to a range of 5-9 due to the correct answer being seven plus or minus two. Component is either single or spanned.</i>",
       "_incorrect": {
-        "final": "Incorrect answer feedback.<br><br>Sorry, that’s not right. According to Miller’s paper 7 +/- 2 chunks of information was the limited capacity of working memory. Various theories from the field of cognitive psychology such as Miller’s <a href='http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two' target='_blank'>magical number</a>, <a href='http://en.wikipedia.org/wiki/Chunking_%28psychology%29#Chunking_as_the_learning_of_long-term_memory_structures' target='_blank'>chunking</a>, <a href='http://en.wikipedia.org/wiki/Forgetting_curve' target='_blank'>the forgetting curve</a> and <a href='http://en.wikipedia.org/wiki/Spaced_repetition' target='_blank'>spaced repetition</a> have all influenced learning theory over the last 50 years or so.<br><br><i>Component facts: The correct answer for a <b>Slider</b> component can be an exact number or a range. In this instance we have set the correct answer to a range of 5-9 due to the correct answer being seven plus or minus two. Component is either single or spanned.</i>"
+        "final": "Incorrect answer feedback.<br><br>Sorry, that’s not right. According to Miller’s paper 7 +/- 2 chunks of information was the limited capacity of working memory. Various theories from the field of cognitive psychology such as Miller’s <a href=http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two target=_blank>magical number</a>, <a href=http://en.wikipedia.org/wiki/Chunking_%28psychology%29#Chunking_as_the_learning_of_long-term_memory_structures target=_blank>chunking</a>, <a href=http://en.wikipedia.org/wiki/Forgetting_curve target=_blank>the forgetting curve</a> and <a href=http://en.wikipedia.org/wiki/Spaced_repetition target=_blank>spaced repetition</a> have all influenced learning theory over the last 50 years or so.<br><br><i>Component facts: The correct answer for a <b>Slider</b> component can be an exact number or a range. In this instance we have set the correct answer to a range of 5-9 due to the correct answer being seven plus or minus two. Component is either single or spanned.</i>"
       }
     }
   },
@@ -1282,22 +1282,22 @@
     "_bands": [
       {
         "_score": 0,
-        "feedback": "You didn’t pass, achieving a score of {{scoreAsPercent}}%.<br><br>You didn’t do so well in the Adapt assessment demo, but don’t worry. There’s lots of information about the Adapt basics on <a href='http://www.adaptlearning.org/' target='_blank'>our site</a>. We’d also suggest you pay a visit to <a href='https://community.adaptlearning.org/mod/forum/view.php?id=4' target='_blank'>the forum</a> or <a href='https://gitter.im/adaptlearning/adapt_framework'>chat room</a> and ask our ever-helpful community to answer any questions that you might have.",
+        "feedback": "You didn’t pass, achieving a score of {{scoreAsPercent}}%.<br><br>You didn’t do so well in the Adapt assessment demo, but don’t worry. There’s lots of information about the Adapt basics on <a href=http://www.adaptlearning.org/ target=_blank>our site</a>. We’d also suggest you pay a visit to <a href=https://community.adaptlearning.org/mod/forum/view.php?id=4 target=_blank>the forum</a> or <a href=https://gitter.im/adaptlearning/adapt_framework>chat room</a> and ask our ever-helpful community to answer any questions that you might have.",
         "_allowRetry": true
       },
       {
         "_score": 50,
-        "feedback": "You didn’t pass, achieving a score of {{scoreAsPercent}}%.<br><br>You already know some of the Adapt basics but please explore <a href='http://www.adaptlearning.org/' target='_blank'>our site</a> for more information. Also pay a visit to <a href='https://community.adaptlearning.org/mod/forum/view.php?id=4' target='_blank'>the forum</a> or <a href='https://gitter.im/adaptlearning/adapt_framework'>chat room</a> and ask our ever-helpful community to answer any questions that you might have.",
+        "feedback": "You didn’t pass, achieving a score of {{scoreAsPercent}}%.<br><br>You already know some of the Adapt basics but please explore <a href=http://www.adaptlearning.org/ target=_blank>our site</a> for more information. Also pay a visit to <a href=https://community.adaptlearning.org/mod/forum/view.php?id=4 target=_blank>the forum</a> or <a href=https://gitter.im/adaptlearning/adapt_framework>chat room</a> and ask our ever-helpful community to answer any questions that you might have.",
         "_allowRetry": true
       },
       {
         "_score": 75,
-        "feedback": "You passed, achieving a score of {{scoreAsPercent}}%.<br><br>You’re clearly already pretty knowledgeable about Adapt so, if you haven’t already, please consider sharing your expertise on the <a href='https://community.adaptlearning.org/mod/forum/view.php?id=4' target='_blank'>Adapt community forums</a>.",
+        "feedback": "You passed, achieving a score of {{scoreAsPercent}}%.<br><br>You’re clearly already pretty knowledgeable about Adapt so, if you haven’t already, please consider sharing your expertise on the <a href=https://community.adaptlearning.org/mod/forum/view.php?id=4 target=_blank>Adapt community forums</a>.",
         "_allowRetry": true
       },
       {
         "_score": 100,
-        "feedback": "You passed, achieving a score of {{scoreAsPercent}}%.<br><br>You’re clearly already a black belt in Adapt! If you haven’t already, please consider sharing your expertise on the <a href='https://community.adaptlearning.org/mod/forum/view.php?id=4' target='_blank'>Adapt community forums</a>.",
+        "feedback": "You passed, achieving a score of {{scoreAsPercent}}%.<br><br>You’re clearly already a black belt in Adapt! If you haven’t already, please consider sharing your expertise on the <a href=https://community.adaptlearning.org/mod/forum/view.php?id=4 target=_blank>Adapt community forums</a>.",
         "_allowRetry": false
       }
     ]
@@ -1319,44 +1319,107 @@
     "_parentId": "fileInputTest",
     "_type": "component",
     "_layout": "full",
-    "_schema": [
-      {
-        "type": "object",
-        "properties": {
-          "OrderID": {
-            "type": "integer"
-          },
-          "Customer": {
-            "type": "string"
-          },
-          "Booker": {
-            "type": "string"
-          },
-          "Ordered": {
-            "type": "integer"
-          },
-          "Required": {
-            "type": "integer"
-          },
-          "Shipped": {
-            "type": "integer"
-          },
-          "REGION": {
-            "type": "string"
-          },
-          "Country": {
-            "type": "string"
-          },
-          "Value": {
-            "type": "string"
-          },
-          "Rating": {
-            "type": "integer"
-          }
+    "_schema": {
+      "$id": "http://example.com/example.json",
+      "type": "object",
+      "default": {},
+      "title": "Root Schema",
+      "required": [
+        "Order ID",
+        "Customer",
+        "Booker",
+        "Ordered",
+        "Required by",
+        "Shipped",
+        "REGION",
+        "Country",
+        "Order value",
+        "Rating"
+      ],
+      "properties": {
+        "Order ID": {
+          "type": "integer",
+          "format": "float",
+          "default": 0,
+          "title": "The Order ID Schema",
+          "examples": [10248]
         },
-        "additionalProperties": true
-      }
-    ],
+        "Customer": {
+          "type": "string",
+          "default": "",
+          "title": "The Customer Schema",
+          "examples": ["VINET"]
+        },
+        "Booker": {
+          "type": "string",
+          "default": "",
+          "title": "The Booker Schema",
+          "examples": ["Steven Buchanan"]
+        },
+        "Ordered": {
+          "type": "integer",
+          "format": "float",
+          "default": 0,
+          "title": "The Ordered Schema",
+          "examples": [4]
+        },
+        "Required by": {
+          "type": "integer",
+          "format": "float",
+          "default": 0,
+          "title": "The Required by Schema",
+          "examples": [1]
+        },
+        "Shipped": {
+          "type": "integer",
+          "format": "float",
+          "default": 0,
+          "title": "The Shipped Schema",
+          "examples": [16]
+        },
+        "REGION": {
+          "type": "string",
+          "default": "",
+          "title": "The REGION Schema",
+          "examples": ["Europe"]
+        },
+        "Country": {
+          "type": "string",
+          "default": "",
+          "title": "The Country Schema",
+          "examples": ["France"]
+        },
+        "Order value": {
+          "type": "integer",
+          "format": "float",
+          "default": 0,
+          "title": "The Order value Schema",
+          "examples": [440]
+        },
+        "Rating": {
+          "type": "number",
+          "format": "float",
+          "default": 0,
+          "title": "The Rating Schema",
+          "examples": [3],
+          "enum": [0, 1, 2, 3, 4, 5]
+        }
+      },
+      "examples": [
+        {
+          "Order ID": 10248,
+          "Customer": "VINET",
+          "Booker": "Steven Buchanan",
+          "Ordered": 4,
+          "Required by": 1,
+          "Shipped": 16,
+          "REGION": "Europe",
+          "Country": "France",
+          "Order value": 440,
+          "Rating": 4
+        }
+      ]
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
@@ -2061,7 +2124,7 @@
     "_disableAccessibilityState": false,
     "title": "Assessment Components",
     "displayTitle": "Assesment Components",
-    "body": "<p>Assessment components allow us to track a learner's progress, they allow us to display a score to the user and send their progress to any SCORM or xAPI/TinCan LRS. This module will showcase a variety of extensions and components, including:</p><ul><li>Tutor</li><li>Assessment Results</li><li>Assessment</li></ul><p>This module has a quiz which will test your knowledge of the Adapt Framework structure.&nbsp;</p>",
+    "body": "<p>Assessment components allow us to track a learners progress, they allow us to display a score to the user and send their progress to any SCORM or xAPI/TinCan LRS. This module will showcase a variety of extensions and components, including:</p><ul><li>Tutor</li><li>Assessment Results</li><li>Assessment</li></ul><p>This module has a quiz which will test your knowledge of the Adapt Framework structure.&nbsp;</p>",
     "_id": "62ea2437dcfd580b1bfaeb4b",
     "_parentId": "62ea2429dcfd580b1bfaeb4a",
     "_type": "component",
@@ -2229,7 +2292,7 @@
     "_disableAccessibilityState": false,
     "title": "Using Adapt at the ODI",
     "displayTitle": "Using Adapt at the ODI",
-    "body": "<p>This is a short module introducing you to some of the basics of Adapt. It will provide you with some handy information on how to use Adapt within the context of the ODI's own customisations.</p><p> This module should teach you how to...</p><ul><li>Think about your audience</li><li>Refine your style</li><li>Design and structure an Adapt module</li><li>Use themes</li><li>Deploy a course</li></ul>",
+    "body": "<p>This is a short module introducing you to some of the basics of Adapt. It will provide you with some handy information on how to use Adapt within the context of the ODIs own customisations.</p><p> This module should teach you how to...</p><ul><li>Think about your audience</li><li>Refine your style</li><li>Design and structure an Adapt module</li><li>Use themes</li><li>Deploy a course</li></ul>",
     "_id": "eLearningIntroText",
     "_parentId": "blockTitle0",
     "_type": "component",
@@ -2344,7 +2407,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com/free-vector/nice-people-avatars-in-flat-design_844761.htm#term=people&page=1&position=26\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com/free-vector/nice-people-avatars-in-flat-design_844761.htm#term=people&page=1&position=26\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(1).png",
       "large": "course/en/assets/photo-(1).png",
       "alt": ""
@@ -2445,7 +2508,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com/free-vector/planning-background-design_1014464.htm#term=plan&page=1&position=4\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com/free-vector/planning-background-design_1014464.htm#term=plan&page=1&position=4\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(2).png",
       "large": "course/en/assets/photo-(2).png",
       "alt": ""
@@ -2495,7 +2558,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.shutterstock.com/pic-134315933.html\" target=\"_blank\">Photoraiz</a> <span class='assetLicence'>[Shutterstock standard licence]</span>",
+      "attribution": "<a href=\"http://www.shutterstock.com/pic-134315933.html\" target=\"_blank\">Photoraiz</a> <span class=assetLicence>[Shutterstock standard licence]</span>",
       "small": "course/en/assets/photo-(3).png",
       "large": "course/en/assets/photo-(3).png",
       "alt": ""
@@ -2748,7 +2811,7 @@
         "text": "Your content"
       }
     ],
-    "instruction": "Choose your answer, then click 'Submit'"
+    "instruction": "Choose your answer, then click Submit"
   },
   {
     "_component": "graphic",
@@ -2771,7 +2834,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com/free-vector/nice-people-avatars-in-flat-design_844761.htm#term=people&page=1&position=26\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com/free-vector/nice-people-avatars-in-flat-design_844761.htm#term=people&page=1&position=26\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(20).png",
       "large": "course/en/assets/photo-(20).png",
       "alt": ""
@@ -2859,7 +2922,7 @@
         "text": "You can choose suitable pictures that help reinforce learning"
       }
     ],
-    "instruction": "Choose your answer, then click 'Submit'"
+    "instruction": "Choose your answer, then click Submit"
   },
   {
     "_component": "mcq",
@@ -2957,7 +3020,7 @@
         "text": "Check your content aligns to your structure"
       }
     ],
-    "instruction": "Choose FOUR answers, then click 'Submit'"
+    "instruction": "Choose FOUR answers, then click Submit"
   },
   {
     "_component": "graphic",
@@ -2980,7 +3043,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"https://www.flickr.com/photos/otacke/12221292503/\" target=\"_blank\">Oliver Tacke</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"https://www.flickr.com/photos/otacke/12221292503/\" target=\"_blank\">Oliver Tacke</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(10).png",
       "large": "course/en/assets/photo-(10).png",
       "alt": ""
@@ -3030,7 +3093,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"theodi.org\" target=\"_blank\">Sponge UK </a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"theodi.org\" target=\"_blank\">Sponge UK </a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(16).png",
       "large": "course/en/assets/photo-(16).png",
       "alt": ""
@@ -3080,7 +3143,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"theodi.org\" target=\"_blank\">Sponge UK </a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"theodi.org\" target=\"_blank\">Sponge UK </a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/intro-logo.png",
       "large": "course/en/assets/intro-logo.png",
       "alt": ""
@@ -3173,7 +3236,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"https://github.com/adaptlearning/adapt_framework/wiki/Framework-in-five-minutes\" target=\"_blank\">Adapt eLearning</a> <span class='assetLicence'>[CC-BY-SA]</span>",
+      "attribution": "<a href=\"https://github.com/adaptlearning/adapt_framework/wiki/Framework-in-five-minutes\" target=\"_blank\">Adapt eLearning</a> <span class=assetLicence>[CC-BY-SA]</span>",
       "small": "course/en/assets/photo-(12).png",
       "large": "course/en/assets/photo-(12).png",
       "alt": ""
@@ -3201,7 +3264,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"https://www.adaptlearning.org/index.php/adapt-authoring-tool/\" target=\"_blank\">Adapt eLearning</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"https://www.adaptlearning.org/index.php/adapt-authoring-tool/\" target=\"_blank\">Adapt eLearning</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(19).png",
       "large": "course/en/assets/photo-(19).png",
       "alt": ""
@@ -3273,7 +3336,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"https://www.flickr.com/photos/pkirtz/15400595821\" target=\"_blank\">Groman123</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"https://www.flickr.com/photos/pkirtz/15400595821\" target=\"_blank\">Groman123</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(14).png",
       "large": "course/en/assets/photo-(14).png",
       "alt": ""
@@ -3323,7 +3386,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com/free-vector/planning-background-design_1014464.htm#term=plan&page=1&position=4\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com/free-vector/planning-background-design_1014464.htm#term=plan&page=1&position=4\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(15).png",
       "large": "course/en/assets/photo-(15).png",
       "alt": ""
@@ -3436,7 +3499,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(1).png",
       "large": "course/en/assets/photo-(1).png",
       "alt": ""
@@ -3486,7 +3549,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/undraw_online_test_re_kyfx.png",
       "large": "course/en/assets/undraw_online_test_re_kyfx.png",
       "alt": ""
@@ -3579,7 +3642,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/undraw_creation_process_re_kqa9.png",
       "large": "course/en/assets/undraw_creation_process_re_kqa9.png",
       "alt": ""
@@ -3695,7 +3758,7 @@
         "text": "Component"
       }
     ],
-    "instruction": "Select your answer and click 'submit'"
+    "instruction": "Select your answer and click submit"
   },
   {
     "_component": "mcq",
@@ -3709,7 +3772,7 @@
     "_disableAccessibilityState": false,
     "title": "Q: Using themes",
     "displayTitle": "Using themes",
-    "body": "<p dir=\"ltr\">When using the ODI's custom theme, which presentation element in Adapt do you add the &ldquo;color-ten&rdquo; style to in order to change the colour of presented content?</p>",
+    "body": "<p dir=\"ltr\">When using the ODIs custom theme, which presentation element in Adapt do you add the &ldquo;color-ten&rdquo; style to in order to change the colour of presented content?</p>",
     "_id": "62dfa1dc9b93b91d9317120b",
     "_layout": "right",
     "_parentId": "2blockTitle10",
@@ -3778,7 +3841,7 @@
         "text": "Component"
       }
     ],
-    "instruction": "Select you answer and click 'submit'"
+    "instruction": "Select you answer and click submit"
   },
   {
     "_component": "graphic",
@@ -3801,7 +3864,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/team.png",
       "large": "course/en/assets/team.png",
       "alt": ""
@@ -3889,7 +3952,7 @@
         "text": "Page progress & Tutor"
       }
     ],
-    "instruction": "Select your answer and click 'submit'"
+    "instruction": "Select your answer and click submit"
   },
   {
     "_component": "graphic",
@@ -3912,7 +3975,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/undraw_moving_forward_re_rs8p.png",
       "large": "course/en/assets/undraw_moving_forward_re_rs8p.png",
       "alt": ""
@@ -4005,7 +4068,7 @@
         "text": "Components"
       }
     ],
-    "instruction": "Select all answers you think are correct and press 'submit'"
+    "instruction": "Select all answers you think are correct and press submit"
   },
   {
     "_component": "graphic",
@@ -4056,7 +4119,7 @@
       "_isEnabled": false
     },
     "_graphic": {
-      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class='assetLicence'>[CC-BY]</span>",
+      "attribution": "<a href=\"http://www.freepik.com\" target=\"_blank\">Freepik</a> <span class=assetLicence>[CC-BY]</span>",
       "small": "course/en/assets/photo-(16).png",
       "large": "course/en/assets/photo-(16).png",
       "alt": ""
