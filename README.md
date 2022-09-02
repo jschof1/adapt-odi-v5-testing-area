@@ -34,18 +34,19 @@ Below includes a version tracker table which keeps a track of all the *stable* c
 |Assesment Results - Moral Machine|||||
 |Assessment summary|4.1.1||||
 |Blank|3.3.0|3.3.1|https://github.com/adaptlearning/adapt-contrib-blank||
-|Drag n Drop|2.5.0|||We do not need this anymore https://github.com/nachocinalli/adapt-selectchoice.|
+|Drag n Drop|2.5.0|||We do not need this anymore https://github.com/nachocinalli/adapt-selectchoice|
 |Graphic|5.1.0|5.1.0|https://github.com/adaptlearning/adapt-contrib-graphic||
 |GMCQ|5.3.0 6.0.5|5.3.0 6.0.5|https://github.com/adaptlearning/adapt-contrib-gmcq||
 |Hot Graphic|5.5.0|5.5.2|https://github.com/adaptlearning/adapt-contrib-hotgraphic||
 |Matching Question|4.4.2|4.4.2|https://github.com/adaptlearning/adapt-contrib-matching||
-|Multiple Choice Question||4.3.0||https://github.com/adaptlearning/adapt-contrib-mcq|
+|Multiple Choice Question||4.3.0|https://github.com/adaptlearning/adapt-contrib-mcq||
 |Media|5.3.2|5.6.0|https://github.com/adaptlearning/adapt-contrib-media||
 |Moral Machine|0.0.5||||
 |Moral Machine Results|0.1.5||||
 |My Game|1.0.0||||
 |Narrative|6.5.1|6.5.3|https://github.com/adaptlearning/adapt-contrib-narrative||
 |Slider|3.3.2|3.4.0|https://github.com/adaptlearning/adapt-contrib-slider||
+|Talk|||https://github.com/nachocinalli/adapt-talk|❌|
 |Text|5.0.0|5.0.0|https://github.com/adaptlearning/adapt-contrib-text||
 |Text input|5.0.0|5.0.0|https://github.com/adaptlearning/adapt-contrib-textInput||
 |iframe|2.1.0|N/A|https://github.com/LearningPool/adapt-contrib-responsiveIframe||
