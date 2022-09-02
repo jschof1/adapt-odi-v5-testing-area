@@ -39,7 +39,7 @@ Below includes a version tracker table which keeps a track of all the *stable* c
 |GMCQ|5.3.0 6.0.5|5.3.0 6.0.5|https://github.com/adaptlearning/adapt-contrib-gmcq||
 |Hot Graphic|5.5.0|5.5.2|https://github.com/adaptlearning/adapt-contrib-hotgraphic||
 |Matching Question|4.4.2|4.4.2|https://github.com/adaptlearning/adapt-contrib-matching||
-|Multiple Choice Question||4.3.0||https://github.com/adaptlearning/adapt-contrib-mcq|
+|Multiple Choice Question||4.3.0|https://github.com/adaptlearning/adapt-contrib-mcq||
 |Media|5.3.2|5.6.0|https://github.com/adaptlearning/adapt-contrib-media||
 |Moral Machine|0.0.5||||
 |Moral Machine Results|0.1.5||||
