@@ -2962,15 +2962,15 @@ this["Handlebars"]["templates"]["fileinput"] = Handlebars.template({"1":function
     + alias4(((helper = (helper = lookupProperty(helpers,"index") || (data && lookupProperty(data,"index"))) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"index","hash":{},"data":data,"loc":{"start":{"line":8,"column":93},"end":{"line":8,"column":103}}}) : helper)))
     + "-input\" "
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"_isRadio") : depths[1]),{"name":"if","hash":{},"fn":container.program(16, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":111},"end":{"line":8,"column":160}}})) != null ? stack1 : "")
-    + " type=\"file\""
-    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"_isEnabled") : depths[1]),{"name":"unless","hash":{},"fn":container.program(18, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":172},"end":{"line":8,"column":217}}})) != null ? stack1 : "")
+    + " accept=\".csv\" type=\"file\""
+    + ((stack1 = lookupProperty(helpers,"unless").call(alias1,(depths[1] != null ? lookupProperty(depths[1],"_isEnabled") : depths[1]),{"name":"unless","hash":{},"fn":container.program(18, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":186},"end":{"line":8,"column":231}}})) != null ? stack1 : "")
     + " aria-label=\""
-    + ((stack1 = (lookupProperty(helpers,"a11y_normalize")||(depth0 && lookupProperty(depth0,"a11y_normalize"))||alias2).call(alias1,(depth0 != null ? lookupProperty(depth0,"text") : depth0),{"name":"a11y_normalize","hash":{},"data":data,"loc":{"start":{"line":8,"column":230},"end":{"line":8,"column":255}}})) != null ? stack1 : "")
+    + ((stack1 = (lookupProperty(helpers,"a11y_normalize")||(depth0 && lookupProperty(depth0,"a11y_normalize"))||alias2).call(alias1,(depth0 != null ? lookupProperty(depth0,"text") : depth0),{"name":"a11y_normalize","hash":{},"data":data,"loc":{"start":{"line":8,"column":244},"end":{"line":8,"column":269}}})) != null ? stack1 : "")
     + "\" data-adapt-index=\""
-    + alias4(((helper = (helper = lookupProperty(helpers,"_index") || (depth0 != null ? lookupProperty(depth0,"_index") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"_index","hash":{},"data":data,"loc":{"start":{"line":8,"column":275},"end":{"line":8,"column":285}}}) : helper)))
+    + alias4(((helper = (helper = lookupProperty(helpers,"_index") || (depth0 != null ? lookupProperty(depth0,"_index") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"_index","hash":{},"data":data,"loc":{"start":{"line":8,"column":289},"end":{"line":8,"column":299}}}) : helper)))
     + "\" />\n        <div class=\"fileInput__item-text\">\n          <div class=\"fileInput__item-text-inner\">\n            "
     + ((stack1 = ((helper = (helper = lookupProperty(helpers,"text") || (depth0 != null ? lookupProperty(depth0,"text") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"text","hash":{},"data":data,"loc":{"start":{"line":11,"column":12},"end":{"line":11,"column":22}}}) : helper))) != null ? stack1 : "")
-    + "\n          </div>\n        </div>\n\n    </div>\n";
+    + "\n          </div>\n        </div>\n    </div>\n";
 },"12":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -3021,8 +3021,8 @@ this["Handlebars"]["templates"]["fileinput"] = Handlebars.template({"1":function
     + "\n  <div class=\"component__widget fileInput__widget"
     + ((stack1 = lookupProperty(helpers,"unless").call(alias1,(depth0 != null ? lookupProperty(depth0,"_isEnabled") : depth0),{"name":"unless","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":49},"end":{"line":5,"column":209}}})) != null ? stack1 : "")
     + "\">\n"
-    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"_items") : depth0),{"name":"each","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":4},"end":{"line":16,"column":13}}})) != null ? stack1 : "")
-    + "\n  </div>\n    <div id=\"feedback\"></div>\n    <table id=\"example\" class=\"display\" width=\"100%\"></table>\n  <div class=\"btn__container\"></div>\n\n</div>\n";
+    + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"_items") : depth0),{"name":"each","hash":{},"fn":container.program(11, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":4},"end":{"line":15,"column":13}}})) != null ? stack1 : "")
+    + "\n  </div>\n    <div id=\"feedback\"></div>\n    <div id=\"feedbackTable\"></div>\n    <table id=\"example\" class=\"display\" width=\"100%\"></table>\n  <div class=\"btn__container\"></div>\n\n</div>\n";
 },"usePartial":true,"useData":true,"useDepths":true});
 
 this["Handlebars"]["templates"]["stacklist"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {

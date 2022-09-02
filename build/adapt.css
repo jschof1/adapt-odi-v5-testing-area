@@ -4141,6 +4141,15 @@ table.dataTable td {
 .fileInput__widget.show-correct-answer .fileInput__item:not(.is-correct):not(.is-incorrect) .is-selected .fileInput__item-answer-icon {
   display: block;
 }
+#feedbackTable th {
+  text-align: center;
+}
+#feedbackTable th {
+  border-bottom: 1px solid #e0e0e0;
+}
+#feedbackTable table {
+  width: 100%;
+}
 .stacklist__items {
   position: relative;
   margin-bottom: -0.5rem;
