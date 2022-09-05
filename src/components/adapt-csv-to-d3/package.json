@@ -1,0 +1,17 @@
+{
+  "name": "adapt-csv-to-d3",
+  "version": "0.0.1",
+  "framework": ">=5.17.2",
+  "homepage": "",
+  "bugs": "",
+  "component" : "csv2d3",
+  "targetAttribute": "_csv2d3",
+  "displayName" : "CSV To D3",
+  "description": "Converts a CSV file into a D3 Table",
+  "main": "/js/adapt-csv-to-d3.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

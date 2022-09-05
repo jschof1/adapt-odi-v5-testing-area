@@ -1569,6 +1569,48 @@
     ]
   },
   {
+    "_id": "62de980020b99011df430651",
+    "_parentId": "62de8ad02bdedd05ba88d17x",
+    "_type": "component",
+    "_component": "chartjs",
+    "_classes": "",
+    "_layout": "full",
+    "title": "Title of the chart component",
+    "displayTitle": "Title of the chart component",
+    "body": "This is optional body text.",
+    "instruction": "",
+    "_chartType": "bar",
+    "_height": 300,
+    "data": {
+      "labels": ["Avoid Intervention", "February", "March", "April", "May", "June", "July"],
+      "datasets": [
+        {
+          "label": "Avoid Intervention",
+          "backgroundColor": "rgba(179,181,198,0.2)",
+          "borderColor": "rgba(179,181,198,1)",
+          "pointBackgroundColor": "rgba(179,181,198,1)",
+          "pointBorderColor": "#fff",
+          "pointHoverBackgroundColor": "#fff",
+          "pointHoverBorderColor": "rgba(179,181,198,1)",
+          "dataURL": "https://raw.githubusercontent.com/theodi/training-web/gh-pages/test-data-for-chartsjs.json",
+          "data": [
+            65,
+            59,
+            90,
+            81,
+            56
+          ]
+        }
+      ]
+  },
+  "_options": {
+      "title": {
+          "display": true,
+          "text": "Custom Chart Title"
+      }
+    }
+  },
+  {
     "_component": "lottieInteractivity",
     "_classes": "",
     "_isOptional": false,

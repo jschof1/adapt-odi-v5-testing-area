@@ -1564,6 +1564,10 @@ html.adapt-scrolling body {
   opacity: 0;
   z-index: 90;
 }
+.chartjs .chart__widget {
+  max-width: 100%;
+  margin: 0 auto;
+}
 .choose__item {
   position: relative;
 }
@@ -3452,6 +3456,15 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 }
 .textinput-item__incorrect-icon .icon:before {
   content: "\e945";
+}
+table {
+  border-collapse: collapse;
+  border: 2px black solid;
+  font: 12px sans-serif;
+}
+td {
+  border: 1px black solid;
+  padding: 5px;
 }
 .dropitems__container {
   display: flex;

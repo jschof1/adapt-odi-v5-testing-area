@@ -25,6 +25,7 @@
 @import 'src/core/less/core/shadow.less';
 @import 'src/core/less/core/transform.less';
 @import 'src/core/less/core/transitions.less';
+@import 'src/components/adapt-chartjs/less/chartjs.less';
 @import 'src/components/adapt-choose/less/choose.less';
 @import 'src/components/adapt-contrib-accordion/less/accordion.less';
 @import 'src/components/adapt-contrib-gmcq/less/gmcq.less';
@@ -40,6 +41,7 @@
 @import 'src/components/adapt-contrib-slider/less/rangeslider.less';
 @import 'src/components/adapt-contrib-slider/less/slider.less';
 @import 'src/components/adapt-contrib-textInput/less/textinput.less';
+@import 'src/components/adapt-csv-to-d3/less/csv2d3.less';
 @import 'src/components/adapt-dropItems/less/drop-items.less';
 @import 'src/components/adapt-odi-fileInput/less/fileinput.less';
 @import 'src/components/adapt-stacklist/less/stacklist.less';

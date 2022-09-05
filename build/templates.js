@@ -1172,6 +1172,21 @@ this["Handlebars"]["templates"]["shadow"] = Handlebars.template({"compiler":[8,"
     return "<div id=\"shadow\" class=\"shadow js-shadow u-display-none\"></div>\n";
 },"useData":true});
 
+this["Handlebars"]["templates"]["chartjs"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div class=\"chart__inner component__inner\">\n"
+    + ((stack1 = container.invokePartial(lookupProperty(partials,"component"),depth0,{"name":"component","data":data,"indent":"  ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "  <canvas id=\"myChart"
+    + container.escapeExpression(((helper = (helper = lookupProperty(helpers,"_id") || (depth0 != null ? lookupProperty(depth0,"_id") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"_id","hash":{},"data":data,"loc":{"start":{"line":3,"column":21},"end":{"line":3,"column":28}}}) : helper)))
+    + "\" class=\"chart__widget component__widget\" width=\"640\" height=\"360\" style=\"width: 100%; height: 100%;\"></canvas>\n</div>\n";
+},"usePartial":true,"useData":true});
+
 this["Handlebars"]["templates"]["accordion"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -2907,6 +2922,10 @@ this["Handlebars"]["templates"]["textinput"] = Handlebars.template({"1":function
     + ((stack1 = lookupProperty(helpers,"each").call(alias1,(depth0 != null ? lookupProperty(depth0,"_items") : depth0),{"name":"each","hash":{},"fn":container.program(5, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":4},"end":{"line":58,"column":13}}})) != null ? stack1 : "")
     + "\n  </div>\n\n  <div class=\"btn__container\"></div>\n\n</div>\n";
 },"usePartial":true,"useData":true,"useDepths":true});
+
+this["Handlebars"]["templates"]["csv2d3"] = Handlebars.template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"component__inner blank__inner\">\n  <input type=\"text\" id=\"csvInput\" name=\"csvInput\" value=\"Enter CSV URL here\">\n</div>\n <div class=\"btn__container\"></div>\n\n  <button id=\"displayCsv\">Convert to D3 Table</button>";
+},"useData":true});
 
 this["Handlebars"]["templates"]["fileinput"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return "radiogroup";

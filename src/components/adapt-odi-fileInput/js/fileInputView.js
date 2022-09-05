@@ -544,7 +544,7 @@ export default class fileInputView extends QuestionView {
     this.createTable()
     this.feedback()
 
-  this.model.get('_maxScore') = 100
+  // this.model.get('_maxScore') = 100
 
     // set score based on feedback count and if it is correct or not
     // if (this.model.get('_feedback')._partlyCorrect.final.length === 0) {
