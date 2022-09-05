@@ -1582,7 +1582,9 @@
     "_chartType": "bar",
     "_height": 300,
     "data": {
-      "labels": ["Avoid Intervention", "February", "March", "April", "May", "June", "July"],
+      "labels": [
+        "Avoid Intervention"
+      ],
       "datasets": [
         {
           "label": "Avoid Intervention",

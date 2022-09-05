@@ -2,7 +2,7 @@ define([
     'coreJS/adapt',
     'coreViews/componentView',
     'libraries/chart.min'
-], function(Adapt, ComponentView, Chart) {
+], function (Adapt, ComponentView, Chart) {
 
     var ChartJSView = ComponentView.extend({
 
@@ -10,7 +10,7 @@ define([
 
         },
 
-        preRender: function() {
+        preRender: function () {
             this.listenTo(Adapt, 'device:resize', this.onScreenSizeChanged);
             this.listenTo(Adapt, 'device:changed', this.onDeviceChanged);
             this.listenTo(Adapt, 'accessibility:toggle', this.onAccessibilityToggle);
@@ -18,38 +18,33 @@ define([
             this.checkIfResetOnRevisit();
         },
 
-        postRender: function() {
+        postRender: function () {
             this.dynamicInsert()
             this.setupChart();
             this.$('.component-widget').on('inview', _.bind(this.inview, this));
         },
 
-        dynamicInsert: function() {
-            // fetch JSON data from the model 'dataURL' property and update the model 'data' property
-            var dataURL = this.model.get('data').datasets[0].dataURL;
-            // console.log(dataURL)
-            const fetchJson = async () => {
-            const response = await fetch(dataURL)
-            const json = await response.json()
-            return json
+        dynamicInsert: function () {
+            if (this.model.get('data').datasets[0].dataURL) {
+                var dataURL = this.model.get('data').datasets[0].dataURL;
+                const fetchJson = async () => {
+                    const response = await fetch(dataURL)
+                    const json = await response.json()
+                    return json
+                }
+                return fetchJson()
+            } else {
+                return this.model.get('data')
             }
-            return fetchJson()
-            // fetchJson().then(json => {
-            //     this.model.get('data').datasets[0].data = json
-            //     this.setupChart();
-            // })
         },
 
-        setupChart: function() {
-            // get fetched data from dynamicInsert() and update the model 'data' property
-            this.model.get('data').datasets[0].data = this.dynamicInsert().then(
-                json => {json}
-            )
-            this.dynamicInsert().then(data => {
-                this.model.get('data').datasets[0].data = data;
-            });
-
-            var ctx = $("#myChart"+this.model.get('_id'));
+        setupChart: function () {
+            if (this.model.get('data').datasets[0].dataURL) {
+                this.model.get('data').datasets[0].data = this.dynamicInsert().then(
+                    json => { json }
+                )
+            }
+            var ctx = $("#myChart" + this.model.get('_id'));
             var chart = new Chart(ctx, {
                 type: this.model.get('_chartType'),
                 data: this.model.get('data'),
@@ -61,7 +56,7 @@ define([
             this.model.set("_chart", chart);
         },
 
-        onDataChanged: function() {
+        onDataChanged: function () {
             var chart = this.model.get("_chart");
 
             if (chart) {
@@ -69,11 +64,11 @@ define([
             }
         },
 
-        setupEventListeners: function() {
+        setupEventListeners: function () {
 
         },
 
-        checkIfResetOnRevisit: function() {
+        checkIfResetOnRevisit: function () {
             var isResetOnRevisit = this.model.get('_isResetOnRevisit');
 
             // If reset is enabled set defaults
@@ -82,7 +77,7 @@ define([
             }
         },
 
-        inview: function(event, visible, visiblePartX, visiblePartY) {
+        inview: function (event, visible, visiblePartX, visiblePartY) {
             if (visible) {
                 if (visiblePartY === 'top') {
                     this._isVisibleTop = true;
@@ -100,7 +95,7 @@ define([
             }
         },
 
-        remove: function() {
+        remove: function () {
             if ($("html").is(".ie8")) {
                 var obj = this.$("object")[0];
                 if (obj) {
@@ -111,19 +106,19 @@ define([
             ComponentView.prototype.remove.call(this);
         },
 
-        onCompletion: function() {
+        onCompletion: function () {
             this.setCompletionStatus();
         },
 
-        onDeviceChanged: function() {
+        onDeviceChanged: function () {
 
         },
 
-        onScreenSizeChanged: function() {
+        onScreenSizeChanged: function () {
 
         },
 
-        onAccessibilityToggle: function() {
+        onAccessibilityToggle: function () {
 
         }
 
