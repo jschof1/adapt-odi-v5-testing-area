@@ -24,30 +24,26 @@ define([
             this.$('.component-widget').on('inview', _.bind(this.inview, this));
         },
 
-        dynamicInsert: function () {
-            if (this.model.get('data').datasets[0].dataURL) {
+        dynamicInsert: async function () {
+            // remove "data" model object
                 var dataURL = this.model.get('data').datasets[0].dataURL;
                 const fetchJson = async () => {
                     const response = await fetch(dataURL)
                     const json = await response.json()
+                    // urlData = json
                     return json
                 }
-                return fetchJson()
-            } else {
-                return this.model.get('data')
-            }
+                return await fetchJson();
         },
 
-        setupChart: function () {
-            if (this.model.get('data').datasets[0].dataURL) {
-                this.model.get('data').datasets[0].data = this.dynamicInsert().then(
-                    json => { json }
-                )
-            }
+        setupChart: async function () {
             var ctx = $("#myChart" + this.model.get('_id'));
+
+            this.model.get('data').datasets[0].data = await this.dynamicInsert()
+            
             var chart = new Chart(ctx, {
                 type: this.model.get('_chartType'),
-                data: this.model.get('data'),
+                data: await this.model.get('data'),
                 options: this.model.get('_options')
             });
 
@@ -55,9 +51,12 @@ define([
 
             this.model.set("_chart", chart);
         },
+        // create funciton which gets fetched data and sets it to the data model object
+
 
         onDataChanged: function () {
             var chart = this.model.get("_chart");
+            console.log(chart)
 
             if (chart) {
                 chart.update();
