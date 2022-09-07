@@ -1,83 +1,73 @@
-define([
-    'coreJS/adapt',
-    'coreViews/componentView',
-    'libraries/chart.min'
-], function (Adapt, ComponentView, Chart) {
 
-    var ChartJSView = ComponentView.extend({
-
-        events: {
-
-        },
-
-        preRender: function () {
+    import Adapt from 'core/js/adapt';
+    import ComponentView from 'core/js/views/componentView';
+    import Chart from 'libraries/chart.min'
+    
+    export default class ChartJSView extends ComponentView {
+  
+        preRender() {
             this.listenTo(Adapt, 'device:resize', this.onScreenSizeChanged);
             this.listenTo(Adapt, 'device:changed', this.onDeviceChanged);
             this.listenTo(Adapt, 'accessibility:toggle', this.onAccessibilityToggle);
             this.listenTo(this.model, 'change:data', this.onDataChanged);
-            this.checkIfResetOnRevisit();
-        },
+            // this.checkIfResetOnRevisit();
+        }
 
-        postRender: function () {
+        postRender() {
             this.dynamicInsert()
             this.setupChart();
             this.$('.component-widget').on('inview', _.bind(this.inview, this));
-        },
+        }
 
-        dynamicInsert: function () {
-            if (this.model.get('data').datasets[0].dataURL) {
+        async dynamicInsert () {
                 var dataURL = this.model.get('data').datasets[0].dataURL;
                 const fetchJson = async () => {
                     const response = await fetch(dataURL)
                     const json = await response.json()
                     return json
                 }
-                return fetchJson()
-            } else {
-                return this.model.get('data')
-            }
-        },
+                return await fetchJson();
+        }
 
-        setupChart: function () {
-            if (this.model.get('data').datasets[0].dataURL) {
-                this.model.get('data').datasets[0].data = this.dynamicInsert().then(
-                    json => { json }
-                )
-            }
+        async setupChart () {
             var ctx = $("#myChart" + this.model.get('_id'));
+
+            this.model.get('data').datasets[0].data = await this.dynamicInsert()
+
             var chart = new Chart(ctx, {
                 type: this.model.get('_chartType'),
-                data: this.model.get('data'),
+                data: await this.model.get('data'),
                 options: this.model.get('_options')
             });
 
             this.setReadyStatus();
 
             this.model.set("_chart", chart);
-        },
-
-        onDataChanged: function () {
+        }
+        
+        onDataChanged() {
             var chart = this.model.get("_chart");
+            console.log(chart)
 
             if (chart) {
                 chart.update();
             }
-        },
+        }
 
-        setupEventListeners: function () {
+        setupEventListeners() {
 
-        },
+        }
 
-        checkIfResetOnRevisit: function () {
+        checkIfResetOnRevisit() {
             var isResetOnRevisit = this.model.get('_isResetOnRevisit');
 
             // If reset is enabled set defaults
             if (isResetOnRevisit) {
                 this.model.reset(isResetOnRevisit);
             }
-        },
+        }
 
-        inview: function (event, visible, visiblePartX, visiblePartY) {
+        inview(event, visible, visiblePartX, visiblePartY) {
             if (visible) {
                 if (visiblePartY === 'top') {
                     this._isVisibleTop = true;
@@ -93,9 +83,9 @@ define([
                     this.setCompletionStatus();
                 }
             }
-        },
+        }
 
-        remove: function () {
+        remove() {
             if ($("html").is(".ie8")) {
                 var obj = this.$("object")[0];
                 if (obj) {
@@ -104,26 +94,22 @@ define([
             }
             this.$('.component-widget').off('inview');
             ComponentView.prototype.remove.call(this);
-        },
+        }
 
-        onCompletion: function () {
+        onCompletion() {
             this.setCompletionStatus();
-        },
+        }
 
-        onDeviceChanged: function () {
-
-        },
-
-        onScreenSizeChanged: function () {
-
-        },
-
-        onAccessibilityToggle: function () {
+        onDeviceChanged() {
 
         }
 
-    });
+        onScreenSizeChanged() {
 
-    return ChartJSView;
+        }
 
-});
+        onAccessibilityToggle() {
+
+        }
+
+    }

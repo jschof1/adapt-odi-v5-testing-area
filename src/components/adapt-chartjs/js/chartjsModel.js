@@ -1,15 +1,14 @@
-define([
-  'coreModels/componentModel'
-], function(ComponentModel){
+import Adapt from 'core/js/adapt';
+import ComponentModel from 'core/js/models/componentModel';
 
-  var ChartJSModel = ComponentModel.extend({
+  export default class ChartJSModel extends ComponentModel {
     /**
      * Updates an existing dataset for a chart.
      *
      * @param  {array} datasetData  An array of the new data points.
      * @param  {int} datasetIndex The index of the dataset to update (defaults to 0.)
      */
-    updateDataset: function(datasetData, datasetIndex) {
+    updateDataset(datasetData, datasetIndex) {
       datasetIndex = datasetIndex || 0;
 
       var data = this.get("data");
@@ -17,7 +16,7 @@ define([
         throw new Error("This chart instance has no data; it may be improperly configured");
       }
 
-      if (!data.datasets || datasetIndex >= data.datasets.length) {
+      if (!data.datasets || dat\asetIndex >= data.datasets.length) {
         throw new RangeError("Cannot update a nonexistent dataset");
       }
 
@@ -25,7 +24,4 @@ define([
 
       this.trigger("change:data");
     }
-  });
-
-  return ChartJSModel;
-});
+  }
